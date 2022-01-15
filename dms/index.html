@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DMS Style Example</title>
+  <link rel="stylesheet" type="text/css" href="./bundle/ha-internal.css">
+</head>
+<body class="dms">
+  <nav>
+    <div class="wrapper">
+      <div class="header-select">
+        <div class="container">
+          <div class="ha-symbol color"></div>
+          <h3>Document Management System</h3>
+          <div class="line"></div>
+        </div>
+        <div class="hidden-container">
+          <p class="caption">See Broker Portal View</p>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="circle"><i class="icon-add white"></i></button>
+        <div class="left">
+          <button class="clear round">Add Link</button>
+          <button class="clear round">Add Document</button>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </div>
+  </nav>
+
+  <div class="main">
+    <div class="wrapper"> <!-- change | wrapped document-table in div.wrapper -->
+      <div class="document-table">
+        <!-- table headers -->
+        <div class="table-header">
+          <div class="th-container">
+            <div class="input">
+              <input type="checkbox" id="checkbox">
+              <label for="checkbox"></label>
+              <div class="checkbox"></div>
+            </div>
+          </div>
+          <div class="th-container">
+            <button class="options"></button>
+            <div>
+              <ul>
+                <li class="list">Remove From Portal <div class="argrid-x grid-margin-x-right right"></div></li>
+                <div class="menu">
+                  <ul>
+                    <li>Broker</li>
+                    <li>Provider</li>
+                    <li>Employer</li>
+                    <li>Member</li>
+                  </ul>
+                </div>
+                <li>Archive</li>
+              </ul>
+            </div>
+          </div>
+          <div class="th-container"><p class="gray-70">0 Selected</p></div>
+          <div class="th-container right">
+            <button class="text refresh"><i class="icon-repeat"></i>Refresh</button>
+            <button class="small">Clear</button>
+            <button class="small filter"><div class="filter-icon"></div>Filter</button>
+            <div>
+              <div class="container-left">
+                <div class="select small">
+                  <label for="small-dropdown"></label>
+                  <select id="small-dropdown">
+                    <option value="" selected>Year</option>
+                    <option value="option 1">Option 1</option>
+                    <option value="option 2">Option 2</option>
+                    <option value="option 3">Option 3</option>
+                  </select>
+                  <div></div>
+                </div>
+                <div class="select small">
+                  <label for="small-dropdown"></label>
+                  <select id="small-dropdown">
+                    <option value="" selected>Category Type</option>
+                    <option value="option 1">Option 1</option>
+                    <option value="option 2">Option 2</option>
+                    <option value="option 3">Option 3</option>
+                  </select>
+                  <div></div>
+                </div>
+              </div>
+              <div class="container-right">
+                <div class="select small">
+                  <label for="small-dropdown"></label>
+                  <select id="small-dropdown">
+                    <option value="" selected>Portal</option>
+                    <option value="option 1">Option 1</option>
+                    <option value="option 2">Option 2</option>
+                    <option value="option 3">Option 3</option>
+                  </select>
+                  <div></div>
+                </div>
+                <div class="select small">
+                  <label for="small-dropdown"></label>
+                  <select id="small-dropdown">
+                    <option value="" selected>Product</option>
+                    <option value="option 1">Option 1</option>
+                    <option value="option 2">Option 2</option>
+                    <option value="option 3">Option 3</option>
+                  </select>
+                  <div></div>
+                </div>
+                <div class="select small">
+                  <label for="small-dropdown"></label>
+                  <select id="small-dropdown" disabled>
+                    <option value="" selected>Region</option>
+                    <option value="option 1">Option 1</option>
+                    <option value="option 2">Option 2</option>
+                    <option value="option 3">Option 3</option>
+                  </select>
+                  <div></div>
+                </div>
+                <div class="select small">
+                  <label for="small-dropdown"></label>
+                  <select id="small-dropdown" disabled>
+                    <option value="" selected>Material Type</option>
+                    <option value="option 1">Option 1</option>
+                    <option value="option 2">Option 2</option>
+                    <option value="option 3">Option 3</option>
+                  </select>
+                  <div></div>
+                </div>
+              </div>
+              <div class="container-bottom">
+                <div class="input">
+                  <input type="checkbox" id="toggle">
+                  <label for="toggle">Show Archived</label>
+                  <div class="toggle"></div>
+                </div>
+                <div class="container-right">
+                  <button class="text">Reset</button>
+                  <button class="purple small">Apply</button>
+                </div>
+              </div>
+            </div>
+            <div class="input">
+              <div class="search-icon"></div>
+              <input type="text" class="search" placeholder="Search">
+              <div class="search-clear"></div>
+              <div class="search-go"></div>
+            </div>
+          </div>
+        </div>
+        <!-- table content -->
+        <div class="table-content">
+          <table>
+            <tr>
+              <td>
+                <div class="input">
+                  <input type="checkbox" id="checkbox">
+                  <label for="checkbox"></label>
+                  <div class="checkbox"></div>
+                </div>
+              </td>
+              <td>
+                <button class="options"></button>
+                <div>
+                  <ul>
+                    <li><a href="/dms-edit-example"></a>Edit</li>
+                    <li>Create New Year Version</li>
+                    <li>Copy URL to Clipboard</li>
+                    <li>Download</li>
+                    <li>Archive</li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <p class="gray-90">Document Name Here</p>
+                <a href="">your-file-here.pdf</a>
+                <div class="future">
+                  <div class="time-icon"></div>
+                  your-file-here.pdf on MM/DD/YYYY
+                </div>
+              </td>
+              <td>
+                <p class="label">Year</p>
+                <p class="data">2020</p>
+              </td>
+              <td>
+                <p class="label">Category</p>
+                <p class="data">Formulary</p>
+              </td>
+              <td>
+                <p class="label">Portal</p>
+                <p class="data">Broker Employer</p>
+              </td>
+              <td>
+                <p class="label">Orderable</p>
+                <p class="data">BP-10001</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="input">
+                  <input type="checkbox" id="checkbox">
+                  <label for="checkbox"></label>
+                  <div class="checkbox"></div>
+                </div>
+              </td>
+              <td>
+                <button class="options"></button>
+                <div>
+                  <ul>
+                    <li>Edit</li>
+                    <li>Create New Year Version</li>
+                    <li>Copy URL to Clipboard</li>
+                    <li>Download</li>
+                    <li>Archive</li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <p class="gray-90">Document Name Here</p>
+                <a href="">your-file-here.pdf</a>
+                <div class="future">
+                  <div class="time-icon"></div>
+                  your-file-here.pdf on MM/DD/YYYY
+                </div>
+              </td>
+              <td>
+                <p class="label">Year</p>
+                <p class="data">2020</p>
+              </td>
+              <td>
+                <p class="label">Category</p>
+                <p class="data">Formulary</p>
+              </td>
+              <td>
+                <p class="label">Portal</p>
+                <p class="data">Broker Employer</p>
+              </td>
+              <td>
+                <p class="label">Orderable</p>
+                <p class="data">BP-10001</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="input">
+                  <input type="checkbox" id="checkbox">
+                  <label for="checkbox"></label>
+                  <div class="checkbox"></div>
+                </div>
+              </td>
+              <td>
+                <button class="options"></button>
+                <div>
+                  <ul>
+                    <li>Edit</li>
+                    <li>Create New Year Version</li>
+                    <li>Copy URL to Clipboard</li>
+                    <li>Download</li>
+                    <li>Archive</li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <p class="gray-90">Document Name Here</p>
+                <a href="">your-file-here.pdf</a>
+                <div class="future">
+                  <div class="time-icon"></div>
+                  your-file-here.pdf on MM/DD/YYYY
+                </div>
+              </td>
+              <td>
+                <p class="label">Year</p>
+                <p class="data">2020</p>
+              </td>
+              <td>
+                <p class="label">Category</p>
+                <p class="data">Formulary</p>
+              </td>
+              <td>
+                <p class="label">Portal</p>
+                <p class="data">Broker Employer</p>
+              </td>
+              <td>
+                <p class="label">Orderable</p>
+                <p class="data">BP-10001</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="input">
+                  <input type="checkbox" id="checkbox">
+                  <label for="checkbox"></label>
+                  <div class="checkbox"></div>
+                </div>
+              </td>
+              <td>
+                <button class="options"></button>
+                <div>
+                  <ul>
+                    <li>Edit</li>
+                    <li>Create New Year Version</li>
+                    <li>Copy URL to Clipboard</li>
+                    <li>Download</li>
+                    <li>Archive</li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <p class="gray-90">Document Name Here</p>
+                <a href="">your-file-here.pdf</a>
+                <div class="future">
+                  <div class="time-icon"></div>
+                  your-file-here.pdf on MM/DD/YYYY
+                </div>
+              </td>
+              <td>
+                <p class="label">Year</p>
+                <p class="data">2020</p>
+              </td>
+              <td>
+                <p class="label">Category</p>
+                <p class="data">Formulary</p>
+              </td>
+              <td>
+                <p class="label">Portal</p>
+                <p class="data">Broker Employer</p>
+              </td>
+              <td>
+                <p class="label">Orderable</p>
+                <p class="data">BP-10001</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="input">
+                  <input type="checkbox" id="checkbox">
+                  <label for="checkbox"></label>
+                  <div class="checkbox"></div>
+                </div>
+              </td>
+              <td>
+                <button class="options"></button>
+                <div>
+                  <ul>
+                    <li>Edit</li>
+                    <li>Create New Year Version</li>
+                    <li>Copy URL to Clipboard</li>
+                    <li>Download</li>
+                    <li>Archive</li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <p class="gray-90">Document Name Here</p>
+                <a href="">your-file-here.pdf</a>
+                <div class="future">
+                  <div class="time-icon"></div>
+                  your-file-here.pdf on MM/DD/YYYY
+                </div>
+              </td>
+              <td>
+                <p class="label">Year</p>
+                <p class="data">2020</p>
+              </td>
+              <td>
+                <p class="label">Category</p>
+                <p class="data">Formulary</p>
+              </td>
+              <td>
+                <p class="label">Portal</p>
+                <p class="data">Broker Employer</p>
+              </td>
+              <td>
+                <p class="label">Orderable</p>
+                <p class="data">BP-10001</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="input">
+                  <input type="checkbox" id="checkbox">
+                  <label for="checkbox"></label>
+                  <div class="checkbox"></div>
+                </div>
+              </td>
+              <td>
+                <button class="options"></button>
+                <div>
+                  <ul>
+                    <li>Edit</li>
+                    <li>Create New Year Version</li>
+                    <li>Copy URL to Clipboard</li>
+                    <li>Download</li>
+                    <li>Archive</li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <p class="gray-90">Document Name Here</p>
+                <a href="">your-file-here.pdf</a>
+                <div class="future">
+                  <div class="time-icon"></div>
+                  your-file-here.pdf on MM/DD/YYYY
+                </div>
+              </td>
+              <td>
+                <p class="label">Year</p>
+                <p class="data">2020</p>
+              </td>
+              <td>
+                <p class="label">Category</p>
+                <p class="data">Formulary</p>
+              </td>
+              <td>
+                <p class="label">Portal</p>
+                <p class="data">Broker Employer</p>
+              </td>
+              <td>
+                <p class="label">Orderable</p>
+                <p class="data">BP-10001</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="input">
+                  <input type="checkbox" id="checkbox">
+                  <label for="checkbox"></label>
+                  <div class="checkbox"></div>
+                </div>
+              </td>
+              <td>
+                <button class="options"></button>
+                <div>
+                  <ul>
+                    <li>Edit</li>
+                    <li>Create New Year Version</li>
+                    <li>Copy URL to Clipboard</li>
+                    <li>Download</li>
+                    <li>Archive</li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <p class="gray-90">Document Name Here</p>
+                <a href="">your-file-here.pdf</a>
+                <div class="future">
+                  <div class="time-icon"></div>
+                  your-file-here.pdf on MM/DD/YYYY
+                </div>
+              </td>
+              <td>
+                <p class="label">Year</p>
+                <p class="data">2020</p>
+              </td>
+              <td>
+                <p class="label">Category</p>
+                <p class="data">Formulary</p>
+              </td>
+              <td>
+                <p class="label">Portal</p>
+                <p class="data">Broker Employer</p>
+              </td>
+              <td>
+                <p class="label">Orderable</p>
+                <p class="data">BP-10001</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="input">
+                  <input type="checkbox" id="checkbox">
+                  <label for="checkbox"></label>
+                  <div class="checkbox"></div>
+                </div>
+              </td>
+              <td>
+                <button class="options"></button>
+                <div>
+                  <ul>
+                    <li>Edit</li>
+                    <li>Create New Year Version</li>
+                    <li>Copy URL to Clipboard</li>
+                    <li>Download</li>
+                    <li>Archive</li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <p class="gray-90">Document Name Here</p>
+                <a href="">your-file-here.pdf</a>
+                <div class="future">
+                  <div class="time-icon"></div>
+                  your-file-here.pdf on MM/DD/YYYY
+                </div>
+              </td>
+              <td>
+                <p class="label">Year</p>
+                <p class="data">2020</p>
+              </td>
+              <td>
+                <p class="label">Category</p>
+                <p class="data">Formulary</p>
+              </td>
+              <td>
+                <p class="label">Portal</p>
+                <p class="data">Broker Employer</p>
+              </td>
+              <td>
+                <p class="label">Orderable</p>
+                <p class="data">BP-10001</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="input">
+                  <input type="checkbox" id="checkbox">
+                  <label for="checkbox"></label>
+                  <div class="checkbox"></div>
+                </div>
+              </td>
+              <td>
+                <button class="options"></button>
+                <div>
+                  <ul>
+                    <li>Edit</li>
+                    <li>Create New Year Version</li>
+                    <li>Copy URL to Clipboard</li>
+                    <li>Download</li>
+                    <li>Archive</li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <p class="gray-90">Document Name Here</p>
+                <a href="">your-file-here.pdf</a>
+                <div class="future">
+                  <div class="time-icon"></div>
+                  your-file-here.pdf on MM/DD/YYYY
+                </div>
+              </td>
+              <td>
+                <p class="label">Year</p>
+                <p class="data">2020</p>
+              </td>
+              <td>
+                <p class="label">Category</p>
+                <p class="data">Formulary</p>
+              </td>
+              <td>
+                <p class="label">Portal</p>
+                <p class="data">Broker Employer</p>
+              </td>
+              <td>
+                <p class="label">Orderable</p>
+                <p class="data">BP-10001</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="input">
+                  <input type="checkbox" id="checkbox">
+                  <label for="checkbox"></label>
+                  <div class="checkbox"></div>
+                </div>
+              </td>
+              <td>
+                <button class="options"></button>
+                <div>
+                  <ul>
+                    <li>Edit</li>
+                    <li>Create New Year Version</li>
+                    <li>Copy URL to Clipboard</li>
+                    <li>Download</li>
+                    <li>Archive</li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <p class="gray-90">Document Name Here</p>
+                <a href="">your-file-here.pdf</a>
+                <div class="future">
+                  <div class="time-icon"></div>
+                  your-file-here.pdf on MM/DD/YYYY
+                </div>
+              </td>
+              <td>
+                <p class="label">Year</p>
+                <p class="data">2020</p>
+              </td>
+              <td>
+                <p class="label">Category</p>
+                <p class="data">Formulary</p>
+              </td>
+              <td>
+                <p class="label">Portal</p>
+                <p class="data">Broker Employer</p>
+              </td>
+              <td>
+                <p class="label">Orderable</p>
+                <p class="data">BP-10001</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="input">
+                  <input type="checkbox" id="checkbox">
+                  <label for="checkbox"></label>
+                  <div class="checkbox"></div>
+                </div>
+              </td>
+              <td>
+                <button class="options"></button>
+                <div>
+                  <ul>
+                    <li>Edit</li>
+                    <li>Create New Year Version</li>
+                    <li>Copy URL to Clipboard</li>
+                    <li>Download</li>
+                    <li>Archive</li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <p class="gray-90">Document Name Here</p>
+                <a href="">your-file-here.pdf</a>
+                <div class="future">
+                  <div class="time-icon"></div>
+                  your-file-here.pdf on MM/DD/YYYY
+                </div>
+              </td>
+              <td>
+                <p class="label">Year</p>
+                <p class="data">2020</p>
+              </td>
+              <td>
+                <p class="label">Category</p>
+                <p class="data">Formulary</p>
+              </td>
+              <td>
+                <p class="label">Portal</p>
+                <p class="data">Broker Employer</p>
+              </td>
+              <td>
+                <p class="label">Orderable</p>
+                <p class="data">BP-10001</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="input">
+                  <input type="checkbox" id="checkbox">
+                  <label for="checkbox"></label>
+                  <div class="checkbox"></div>
+                </div>
+              </td>
+              <td>
+                <button class="options"></button>
+                <div>
+                  <ul>
+                    <li>Edit</li>
+                    <li>Create New Year Version</li>
+                    <li>Copy URL to Clipboard</li>
+                    <li>Download</li>
+                    <li>Archive</li>
+                  </ul>
+                </div>
+              </td>
+              <td>
+                <p class="gray-90">Document Name Here</p>
+                <a href="">your-file-here.pdf</a>
+                <div class="future">
+                  <div class="time-icon"></div>
+                  your-file-here.pdf on MM/DD/YYYY
+                </div>
+              </td>
+              <td>
+                <p class="label">Year</p>
+                <p class="data">2020</p>
+              </td>
+              <td>
+                <p class="label">Category</p>
+                <p class="data">Formulary</p>
+              </td>
+              <td>
+                <p class="label">Portal</p>
+                <p class="data">Broker Employer</p>
+              </td>
+              <td>
+                <p class="label">Orderable</p>
+                <p class="data">BP-10001</p>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  
+  <script type="text/javascript" src="./bundle/ha-internal.js"></script>
+  <script>
+    include( circleButton(), optionsButton(), filterButton(), checkboxRadioInput(), dropdown(), searchBar() );
+  </script>
+
+</body>
+</html>
