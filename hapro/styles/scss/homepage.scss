@@ -1,0 +1,124 @@
+@import 'global';
+
+//homepage rules
+div.homepage {
+	height:100%; 
+	margin:0;
+
+	div.text-container {
+		margin:0 auto;
+		padding-top:80px;
+		max-width:675px;
+		text-align:center;
+
+		h2 {
+			color:$purple;
+			font-size:1.625rem;
+			font-weight:500;
+			margin:0;
+		}
+
+		p {
+			color:$dark-grey;
+			font-weight:400;
+		}
+
+	}
+
+	div.choose {
+		margin:0 auto;
+		padding:55px 0 18px 0;
+		text-align:center;
+
+		p {
+			color:$grey;
+			font-size:1.125rem;
+			font-weight:500;
+		}
+
+	}
+
+	div.choice-container {
+		height:auto;
+		margin:0 0 30px 0;
+		width:100%;
+
+		div.choice {
+			background-color:white;
+			border:1px solid $border;
+			border-radius:5px;
+			box-shadow: 0px 0px 18px -5px rgba(189,189,189,0.5);
+			display:inline-block;
+			height:198px;
+			margin:0 2%;
+			min-width:340px;
+			width:32%;
+			@extend .hover;
+
+			a {
+				background-color:blue;
+				color:$black;
+				text-decoration:none;
+			}
+
+			div.inner-container {
+				margin:0 auto;
+				text-align:center;
+				position:relative;
+				transform:translateY(37%);
+				width:80%;
+
+				img {
+					height:60px;
+				}
+
+				h3 {
+					border-bottom:none;
+					padding:13px 0 0 0;
+					margin:0 0 14px 0;
+				}
+
+			}
+
+		}
+
+		div.choice.left {
+			float:left;
+			margin:0;
+		}
+
+		div.choice.right {
+			float:right;
+			margin:0;
+		}
+
+	}
+
+}
+
+// mobile rules 
+@media only screen and (max-width:1102px) {
+
+	body div.homepage div.choice-container div.choice {
+		margin:18px 0;
+		width:100%;
+	}
+
+	body div.homepage div.choice-container div.choice.left {
+		float:none;
+	}
+
+	body div.homepage div.choice-container div.choice.right {
+		float:none;
+	}
+
+}
+
+@media only screen and (max-width:377px) {
+
+	div.page-container nav div.wrapper div.inner-container a img {
+		height:10vw;
+
+	}
+
+}

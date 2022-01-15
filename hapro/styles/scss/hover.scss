@@ -1,0 +1,34 @@
+@import 'global';
+
+button.white:hover {
+	background-color:$purple;
+	color:white;
+}
+
+button.purple:hover {
+	background-color:white;
+	border:2px solid $purple;
+	color:$purple;
+	font-weight:400;
+}
+
+button.clear:hover {
+	color:$black;
+}
+
+nav div.right.browser li:hover {
+	border-bottom:2px solid $black;
+	color:$black;
+}
+
+div.primary div.single-page div.sub-nav ul li:hover {
+	border-bottom:2px solid $black;
+}
+
+div.primary div.single-page div.fyb-row div.item a:hover {
+	color:$purple;
+}
+
+div.homepage div.choice-container div.choice:hover {
+	border:1px solid $purple;
+}

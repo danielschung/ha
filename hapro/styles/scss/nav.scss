@@ -1,0 +1,155 @@
+@import 'global';
+
+nav {
+	box-shadow: 0 5px 10px -2px $border;
+	height:90px;
+	width:100%;
+
+	div.inner-container {
+		top:-50%;
+		transform:translateY(40%);
+
+		img {
+			height:2.625rem;
+			top:-50%;
+			transform:translateY(10%);
+		}
+
+		div.right {
+			float:right;
+			text-align:right;
+			width:auto;
+
+			ul {
+				display:inline-block;
+				padding:0;
+				position:relative;
+				float:left;
+				margin:0 10px 0 0;
+				transform:translateY(50%);
+
+				a {
+					text-decoration:none;
+					font-family:$font;
+					font-weight:$normal;
+					color:$grey;
+				}
+
+				li {
+					display:inline;
+					margin:0 1.125rem;
+					@extend .hover;
+				}
+
+				a.current {
+					color:$purple;
+				}
+
+			}
+
+		}
+
+		div.right.browser {
+			display:block;
+		}
+
+		div.right.mobile { //mobile nav (also below)
+			display:none;
+			top:-50%;
+			transform:translateY(40%);
+			width:auto;
+
+			i {
+				color:$purple;
+				float:right;
+				font-size:1.9rem;
+				margin-right:1.25rem;
+				position:relative;
+				z-index:3;
+			}
+
+		}
+
+	}
+
+}
+
+//mobile nav rules
+
+div.slide-out {
+	background-color:$purple;
+	height:100vh;
+	opacity:0.9;
+	width:0;
+	position:fixed;
+	right:0;
+	z-index:2;
+
+	div.container {
+
+		display:none;
+		height:500px;
+		margin:31px auto 0 auto;
+		width:75%;
+
+		i.icon-align-center {
+			color:white;
+			display:none;
+			float:right;
+			font-size:1.9rem;
+			margin-right:0;
+			position:relative;
+			z-index:3;
+		}
+
+		ul {
+			position:relative;
+			top:3.125rem;
+			padding:0;
+
+			a {
+				color:white;
+				font-family:$link-font;
+				list-style-type:none;
+				margin:1.25rem 0 0 0.625rem;
+				text-decoration:none;
+			}
+		}
+
+	}
+
+}
+
+div.faded-layer {
+	background-color:$black;
+	display:none;
+	height:100vh;
+	opacity:0.87;
+	position:fixed;
+	width:100vw;
+	z-index:1;
+}
+
+@media only screen and (max-width:410px) {
+
+	nav	{
+
+		div.inner-container {
+			
+			div.right {
+
+				ul {
+					margin-right:0;
+				}
+
+				button.purple.homepage {
+					width:100px;
+				}
+
+			}
+
+		}
+
+	}
+
+}
