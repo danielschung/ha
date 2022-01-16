@@ -1,0 +1,60 @@
+@import 'global';
+
+//header
+
+div.inner-container a.get-in-touch:hover {
+	border:1px $purple-clear solid;
+	color:$purple-clear;
+}
+
+div.inner-container a.request-a-quote:hover {
+	border:1px $purple solid;
+	background-color:$purple;
+}
+
+button.zipcode-button:hover {
+	border:1px $purple solid;
+	background-color:$purple;
+}
+
+//plan picker
+.dropbtn:hover, .dropbtn:focus {
+    // background-color: #2980B9;
+}
+
+div.card div.right div.button-container button.providers-button:hover {
+	border:0.0625em solid $black;
+}
+
+div.card div.right div.button-container button.enroll-button:hover {
+	background-color:$purple;
+
+}
+
+//filters
+div.plan-filter-container div.HMO-container:hover,
+div.plan-filter-container div.POS-container:hover,
+div.plan-filter-container div.HSA-container:hover,
+div.metal-filter-container div.platinum-container:hover,
+div.metal-filter-container div.gold-container:hover,
+div.metal-filter-container div.silver-container:hover,
+div.metal-filter-container div.bronze-container:hover {
+	border:1px solid $border-grey;
+}
+
+//FAQ
+button.faq-form-button:hover {
+	border:0.0625em solid $purple;
+	background-color:white;
+	color:$purple;
+	text-decoration:none;
+}
+
+//about us
+section.ha div.wrapper div.container.left {
+	button.learn-more:hover {
+		background-color:$purple-clear;
+		color:$white;
+	}
+
+}

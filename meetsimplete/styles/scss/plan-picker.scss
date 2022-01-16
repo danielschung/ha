@@ -1,0 +1,122 @@
+@import 'global';
+
+//rules
+section.plan-picker {
+	background-color:$whiteish;
+	min-height:1500px;
+	height:auto;
+	padding-bottom:1em;
+	text-align:center;
+}
+
+section.plan-picker div.wrapper {
+	min-height:93.75em;
+	height:auto;
+}
+
+section.plan-picker div.wrapper div.card-container div.container {
+	padding-top:10.4375em;
+	margin:0 auto;
+	max-width:39.0625em;
+}
+
+section.plan-picker div.wrapper div.container p.intro-text {
+	font-size:1.125em;
+	line-height:1.61111111em;
+}
+
+//start filtering div rules
+section.plan-picker div.wrapper div.filter-container {
+	height:auto;
+	margin:4.8125em auto 1.7em auto;
+	max-width:70.0625em;
+	width:73%;
+}
+
+section.plan-picker div.wrapper div.filter-container div.plan-filter-container,
+section.plan-picker div.wrapper div.filter-container div.metal-filter-container {
+	display:inline-block;
+	position:relative;
+	top:50%;
+	width:auto;
+}
+
+section.plan-picker div.wrapper div.filter-container div.plan-filter-container {
+	float:left;
+}
+
+section.plan-picker div.wrapper div.filter-container div.metal-filter-container {
+	float:right;
+}
+
+div.plan-filter-container h3,
+div.metal-filter-container h3 {
+	color:$black;
+	display:inline;
+	font-family:$regular;
+	font-size:1.25em;
+	padding-right:1em;
+}
+
+div.plan-filter-container div.HMO-container,
+div.plan-filter-container div.POS-container,
+div.plan-filter-container div.HSA-container,
+div.metal-filter-container div.platinum-container,
+div.metal-filter-container div.gold-container,
+div.metal-filter-container div.silver-container,
+div.metal-filter-container div.bronze-container {
+	border: 1px solid $whiteish;
+	border-radius:0.1875em;
+	cursor:default;
+	display:inline;
+	margin:0 0.17em;
+	padding:0.47em 0.73em;
+	color:$dark-grey;
+	font-family:$strong;
+	font-size:1.125em;
+	@extend .hover;
+}
+
+div.plan-filter-container div.HMO-container.clicked,
+div.plan-filter-container div.POS-container.clicked,
+div.plan-filter-container div.HSA-container.clicked {
+	background-color:$purple;
+	color:$white;
+}
+
+div.metal-filter-container div.platinum-container.clicked {
+	background-color:$platinum;
+	color:$white;
+}
+
+div.metal-filter-container div.gold-container.clicked {
+	background-color:$gold;
+	color:$white;
+}
+
+div.metal-filter-container div.silver-container.clicked {
+	background-color:$light-grey;
+	color:$white;
+}
+
+div.metal-filter-container div.bronze-container.clicked {
+	background-color:$bronze;
+	color:$white;
+}
+
+.noSelect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+
+
+
+
+
+

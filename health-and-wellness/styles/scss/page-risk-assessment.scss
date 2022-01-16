@@ -1,0 +1,102 @@
+@import 'global';
+
+
+//general rules consistant across all pages
+
+section.risk-assessment {
+
+	div.container {
+		padding-top:10.92857143rem;
+
+		div.left {
+			float:left;
+			max-width:31.92857143rem;
+
+			p.sub-text {
+				font-size:1.35714286rem;
+				line-height:2.07142857rem;
+			}
+
+		}
+
+		div.right {
+			float:right;
+			max-width:41.92857143rem;
+			width:49%;
+			height:28.42857143rem;
+			background-image: url("../../assets/risk-assessment-assets/risk-assessment.jpg");
+			background-position:-11rem 0;
+			background-size:50em;
+		}
+
+	}
+
+}
+
+section.weight-management {
+	padding-top:173px;
+
+	h1 {
+		text-align:center;
+	}
+
+	div.daily-reader{
+
+		h3 {
+			margin-top:5.71428571rem;
+			margin-bottom:1.65571429rem;
+		}
+
+		div.container {
+			border-top:1px solid $border;
+			padding-top:2.64285714rem;
+
+			div.inner-container {
+				height:100%;
+				margin-bottom:47px;
+
+				div.image {
+					float:left;
+					height:182px;
+					width:37%;
+					background-color:blue;
+				}
+
+				div.text-container {
+					float:right;
+					width:60%;
+				}
+
+				p.source {
+					font-size:1.28571429rem;
+					font-weight:600;
+					line-height:1.5rem;
+					margin-bottom:0.5rem;
+				}
+
+				p.title {
+					font-size:1.28571429rem;
+					font-weight:500;
+					line-height:2rem;
+				}
+
+				p.article {
+					font-size:1.28571429rem;
+					font-weight:400;
+					line-height:2rem;
+					margin-top:1rem;
+
+					a {
+						font-weight:500;
+						text-decoration:none;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}

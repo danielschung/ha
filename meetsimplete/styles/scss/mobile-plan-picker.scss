@@ -1,0 +1,153 @@
+@import 'global';
+
+//mobile rules header and filters
+@media only screen and (max-width:1227px) {
+
+	section.plan-picker div.wrapper div.card-container.mobile {	
+		width:100%;
+	}
+
+	section.plan-picker div.wrapper div.filter-container {
+		width:100%;
+	}
+
+}
+
+@media only screen and (max-width:990px) {
+
+	section.plan-picker div.wrapper div.card-container.text {
+		width:100%;
+	}
+
+	section.plan-picker div.wrapper div.filter-container {
+		width:100%;
+	}
+
+	section.plan-picker div.wrapper div.card-container div.container {
+		text-align:left;
+		max-width:100%;
+	}
+
+}
+
+@media only screen and (max-width:898px) {
+
+	section.plan-picker div.wrapper div.filter-container div.plan-filter-container h3 {
+		margin-right:0.74em;
+	}
+
+	section.plan-picker div.wrapper div.filter-container div.metal-filter-container {
+		float:left;
+		margin:2em 0 1em 0;
+	}
+
+}
+
+//mobile card rules
+@media only screen and (max-width:834px) {
+
+	div.card-container div.card div.left {
+		float:none;
+		margin:2.3em auto;
+		width:90%;
+
+	}
+
+	div.card-container div.card div.right {
+		margin:4.3em auto 0 auto;
+		width:90%;
+		height:5em;
+		float:none;
+	}
+
+	div.card-container div.card div.right div.dropdown {
+		float:left;
+		margin:0;
+		position:relative;
+		transform:translateY(27%);
+	}
+
+	div.card-container div.card div.right div.button-container {
+		float:right;
+		margin:0;
+		position:relative;
+		transform:translateY(-32%);
+	}
+
+}
+
+@media only screen and (max-width:560px) {
+	section div.wrapper div.filter-container div.plan-filter-container h3,
+	section div.wrapper div.filter-container div.plan-filter-container div.filter,
+	section div.wrapper div.filter-container div.metal-filter-container h3,
+	section div.wrapper div.filter-container div.metal-filter-container div.filter, {
+		font-size:3vw;
+	}
+
+	body section.plan-picker div.wrapper div.card-container div.card div.left {
+		float:none;
+	}
+
+	div.card-container div.card div.right {
+		float:none;
+		margin:4.3em auto 0 auto;
+	}
+}
+
+@media only screen and (max-width:437px) {
+
+	div.card-container div.card div.right div.dropdown,
+	div.card-container div.card div.right div.button-container {
+		width:100%;
+	}
+
+	div.card-container div.card div.right div.dropdown {
+		display:none;
+	}
+
+	div.card-container div.card div.right div.button-container {
+		margin-top:1.5em;
+	}
+
+	button.dropbtn {
+		height:3.125em;
+		width:100%;
+	}
+
+	div.card-container div.card div.right div.button-container button.providers-button,
+	div.card-container div.card div.right div.button-container button.enroll-button {
+		width:100%;
+	}
+
+	div.card div.left table {
+		margin-top:30px;
+	}
+
+	body section.plan-picker div.wrapper div.filter-container div.plan-filter-container,
+	body section.plan-picker div.wrapper div.filter-container div.metal-filter-container {
+		
+		
+	}
+
+	body section.plan-picker div.wrapper div.filter-container div.plan-filter-container h3,
+	body section.plan-picker div.wrapper div.filter-container div.metal-filter-container h3 {
+		margin:0 60% 5% 0;
+	}
+
+	section div.wrapper div.filter-container div.plan-filter-container h3,
+	section div.wrapper div.filter-container div.plan-filter-container div.filter,
+	section div.wrapper div.filter-container div.metal-filter-container h3,
+	section div.wrapper div.filter-container div.metal-filter-container div.filter, {
+		font-size:1em;
+		float:left;
+		margin-top:0.7em;
+	}
+
+}
+
+
+
+
+
+
+

@@ -1,0 +1,77 @@
+@import 'global';
+
+//plan table rules
+div.card div.left table {
+	border:none;
+	font-family:$light;
+	font-size:0.9375em;
+	text-align:center;
+	width:100%;
+}
+
+div.card div.left table tr th {
+	color:$cardh4;
+	font-size:14px;
+}
+
+div.card div.left table tr th.tier3 {
+	min-width:47px;
+}
+
+div.card div.left table tr td,
+div.card div.left table tr th {
+	margin:0;
+	padding:7px;
+}
+
+div.card div.left table tr.grey {
+	background-color:$table-grey;
+}
+
+div.card div.left table tr td.table-text {
+	padding:0.66666667em;
+	text-align:left;
+}
+
+div.card div.left table tr td.price {
+	font-family:$strong;
+}
+
+div.card div.right {
+	height:13em;
+	float:right;
+	margin:2.3em 2.3em 2em 0;
+}
+
+div.downloads {
+	background-color:$white;
+	float:right;
+	height:40px;
+	width:141px;
+}
+
+div.card div.right div.button-container {
+	margin-top:7.33em;
+}
+
+div.card div.right div.button-container button {
+	border-radius:0.1875em;
+	display:block;
+	font-family:$regular;
+	height:3.125em;
+	margin-top:1em;
+	width:160px;
+}
+
+div.card div.right div.button-container button.providers-button {
+	border:0.0625em solid $border-grey;
+	color:$purple-clear;
+	@extend .hover;
+}
+
+div.card div.right div.button-container button.enroll-button {
+	background-color:$purple-clear;
+	border:none;
+	color:$white;
+	@extend .hover;
+}

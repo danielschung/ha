@@ -1,0 +1,198 @@
+@import 'global';
+
+//rules
+
+.hover {
+	-o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+section.contact {
+
+	background-color:$whiteish;
+	height:100vh;
+
+	div.nav-container {
+		margin:0 auto;
+		padding-top:20px;
+		width:90%;
+
+
+		h1.go-back {
+			color:$purple;
+			font-family:$light;
+			font-size:0.9em;
+			padding-top:10px;
+		}
+
+	}
+
+	div.wrapper {
+
+		div.heading-container {
+
+			padding-top:3.9375em;
+			text-align:center;
+
+			p {
+				font-size:1.125em;
+			}
+
+		}
+
+		div.form {
+
+			margin-top:4.3625em;
+
+			div.top-card {
+				font-family:$regular;
+				height:70px;
+				margin:0.875em 0 0 0;
+				width:100%;
+
+				div.inner-container {
+					margin:0 auto;
+					position:relative;
+					top:50%;
+					transform:translateY(-60%);
+					width:90%;
+
+					select.drop-down {
+						background-color:$white;
+						border:none;
+						box-shadow: 0 0 17px 1px rgba(218,218,218,0.5);
+						color:$black;
+						font-family:$light;
+						font-size:1em;
+						height:50px;
+						width:49%;
+					}
+
+					select.drop-down.right {
+						float:right;
+					}
+
+				}
+
+			}
+
+			div.bottom-card {
+				background-color:$white;
+				box-shadow: 0 0 17px 1px rgba(218,218,218,0.5);
+				font-family:$regular;
+				height:auto;
+				margin:0.875em auto 0 auto;
+				padding:57px 0 73px 0;
+				width:90%;
+
+				div.inner-container {
+					margin:0 auto;
+					position:relative;
+					width:93%;
+					height:auto;
+
+					h4 {
+						color:$purple;
+						font-family:$light;
+						font-size:1.25em;
+						text-align:center;
+						padding-bottom:50px;
+					}
+
+					input {
+						border:none;
+						border-bottom:1px solid $border-grey;
+						color:$text;
+						font-family:$light;
+						margin:0.7em 0;
+						padding:0.7em 0;
+						width:100%;
+					}
+
+					input.half {
+						width:48%;
+					}
+
+					input.right {
+						float:right;
+					}
+
+				}
+
+			}
+
+			button.faq-form-button.contact {
+				height:3.75em;
+				top:-1.5625em;
+				width:13.125em;
+			}
+
+		}
+
+	}
+
+}
+
+//mobile rules
+@media only screen and (max-width:577px) {
+
+	section.contact {
+
+		div.nav-container {
+			width:100%;
+		}
+
+		div.wrapper {
+
+			div.form {
+
+				div.top-card {
+
+					div.inner-container {
+						width:100%;
+
+						select.drop-down {
+							margin-bottom:1em;
+							width:100%;
+						}
+
+					}
+
+				}
+
+				div.bottom-card {
+					margin-top:3.7em;
+					width:100%;
+
+					div.inner-container {
+
+						input.half {
+							width:100%;
+						}
+
+					}
+
+				}
+
+
+			}
+
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

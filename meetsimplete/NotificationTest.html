@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simplete | Coming Soon</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/styles/css/main.css">
+	<link rel="stylesheet" type="text/css" href="/styles/css/mobile.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<style>
+
+		@font-face {
+			font-family:"SF-Pro";
+			src: url("./styles/fonts/SF-Pro/SF-Pro-Display-Light.otf");
+		}
+
+		@font-face {
+			font-family:"SF-Pro-bold";
+			src: url("./styles/fonts/SF-Pro/SF-Pro-Display-Regular.otf");
+		}
+
+		@font-face {
+			font-family:"Museo-Sans";
+			src: url("./styles/fonts/Museo-Sans/MuseoSans-100.otf");
+		}
+
+		@font-face {
+			font-family:"Museo-Sans-italic";
+			src: url("./styles/fonts/Museo-Sans/MuseoSans-100Italic.otf");
+		}
+
+		@font-face {
+			font-family:"Museo-Sans-bold";
+			src: url("./styles/fonts/Museo-Sans/MuseoSans-500.otf");
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div class="inner-wrapper">
+			<img class="logo" src="/assets/simplete.png">
+		</div>
+		<script src='https://www.google.com/recaptcha/api.js'></script>
+	</header>
+
+	<main>
+		<div class="inner-wrapper">
+			<div class="main-text-container">
+                <form action="/NotificationForm" method="post">
+                    <h1 class="white">Test a notification</h1>
+                    <p class="white">Enter values below and click send</p>
+                    <p class="white">HMO100&nbsp;<input name="HMO100" type="text" value="" /></p>
+                    <p class="white">HMO250&nbsp;<input name="HMO250" type="text" value="" /></p>
+                    <p class="white">HMO750&nbsp;<input name="HMO750" type="text" value="" /></p>
+                    <p class="white">HMO2000&nbsp;<input name="HMO2000" type="text" value="" /></p>
+                    <p class="white">HMO3500&nbsp;<input name="HMO3500" type="text" value="" /></p>
+                    <p class="white">POS750&nbsp;<input name="POS750" type="text" value="" /></p>
+                    <p class="white">POS1500&nbsp;<input name="POS1500" type="text" value="" /></p>
+                    <p class="white">POS2500&nbsp;<input name="POS2500" type="text" value="" /></p>
+                    <p class="white">POS4500&nbsp;<input name="POS4500" type="text" value="" /></p>
+                    <p class="white">Email:&nbsp;<input name="SendTo" type="text" value="" /></p>
+					<p><div class="g-recaptcha" data-sitekey="6Lf7FHcUAAAAAGunQcpAc_nq0qRJPeSUw2LeHwhJ"></div></p>
+                    <p><input type="submit" /></p>
+                    <input name="ReturnUrl" value="/Index" type="hidden" />
+                    <input name="MessageType" value="SimpleteTest" type="hidden" />
+                </form>
+			</div>
+        </div>
+	</main>
+
+	<section>
+		<div class="inner-wrapper">
+			<div class="section-container">
+				<img src="/assets/simplete-memorial.png" class="simplete-memorial">
+				<img src="/assets/memorial.png" class="memorial">
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="inner-wrapper">
+			<div class="footer-container">
+				<img src="/assets/simplete-purple.png" class="footer-logo">
+				<div class="footer-nav-container">
+					<ul>
+						<a href="https://www.choosememorial.org/"><li class="footer-link">Memorial Health System</li></a>
+						<a href="https://www.healthalliance.org/"><li class="footer-link">Health Alliance</li></a>
+						<li>© 2018 Simplete</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>

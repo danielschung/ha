@@ -1,0 +1,96 @@
+@import 'global';
+
+//rules
+section.breakout {
+	background-color:$purple;
+	height:auto;
+	padding:9.15625em 0;
+}
+
+section.breakout div.wrapper div.container {
+	position:relative;
+	top:50%;
+	min-height:34em;
+}
+
+section.breakout h2 {
+	color:white;
+}
+
+section.breakout div.wrapper div.container div.left {
+	float:left;
+	width:49%;
+}
+
+div.breakout-box {
+	border:1.2px solid $white;
+	border-radius:0.3125em;
+	margin-bottom:1.6875em;
+	padding:1.875em 2.14875em 2.375em 2.14875em;
+}
+
+div.breakout-box.first {
+	margin-top:3.375em;
+}
+
+div.breakout-box h3 {
+	color:white;
+	font-family:$light;
+	font-size:1.75em;
+	margin-bottom:0.75em;
+}
+
+div.breakout-box p {
+	color:white;
+	font-family:$light;
+	font-size:0.875em;
+	line-height:1.4375em;
+}
+
+section.breakout div.wrapper div.container div.right {
+	float:right;
+	width:49%;
+}
+
+//troxell rules
+section.troxell {
+	height:auto;
+	padding:6.0625em 0;
+}
+
+img.troxell {
+	width:13.125em;
+}
+
+section.troxell div.wrapper {
+	height:100%;
+}
+
+section.troxell div.wrapper div.container {
+	height:2.3em;
+	margin:1em 0;
+	display:inline-block;
+	position:relative;
+	top:50%;
+	transform:translateY(2%);
+}
+
+section.troxell div.wrapper div.container.left {
+	width:20%;
+}
+
+section.troxell div.wrapper div.container.right {
+	float:right;
+	width:auto;
+}
+
+section.troxell div.wrapper div.container h2 {
+	color:$light-grey;
+	font-family:$light;
+	font-size:2.5vw;
+	float:right;
+	line-height:1.47em;
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+}

@@ -1,0 +1,83 @@
+@import 'global';
+
+@media only screen and (max-width:1250px) {
+	header.about {
+		background-position: 50% 40%;
+	}
+}
+
+@media only screen and (max-width:950px) {
+	header.about div.wrapper div.text-container.about {
+		left:0;
+		margin:0 auto;
+		width:90%;
+	}
+
+	header.about {
+		background-position: 60% 40%;
+		background-size:107em;
+	}
+
+	div.text-container.about h2 {
+		font-size:1.275em;
+	}
+
+	div.text-container.about p {
+		font-size:1.125em;
+	}
+
+	section.intro.about div.wrapper div.container,
+	section.ha div.wrapper div.container {
+		max-width:100%;
+		width:100%;
+	} 
+
+	section.intro.about div.wrapper div.container.right,
+	section.ha div.wrapper div.container.right {
+		float:left;
+	}
+
+	section.ha div.wrapper div.container {
+		margin-bottom:0;
+	}
+
+	section.intro.about div.wrapper div.container.left {
+		div.memorial-image {
+			height:300px;
+		}
+	}
+
+	section.intro.about div.wrapper div.container.right div.logo-container,
+	section.ha div.wrapper div.container.right div.logo-container {
+		height:0;
+		margin-top:-7em;
+		display:none;
+	}
+
+}
+
+@media only screen and (max-width:605px) {
+	header.about div.wrapper div.text-container.about {
+		font-size:15px;
+		top:2em;
+	}
+
+}
+
+
+
+@media only screen and (max-width:484px) {
+	div.text-container.about h2 {
+		font-size:1.375em;
+	}
+
+	div.text-container.about p {
+		font-size:1.14583333em;
+	}
+}
+
+@media only screen and (max-width:437px) {
+	header.about div.wrapper div.text-container.about {
+		top:-2em;
+	}
+}

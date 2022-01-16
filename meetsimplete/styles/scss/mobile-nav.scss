@@ -1,0 +1,64 @@
+@import 'global';
+
+//mobile nav
+
+nav div.container img.mobile-nav {
+	display:none;
+	float:right;
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+	width:1.7em;
+}
+
+nav div.open-link-container.left img.x-logo {
+	float:right;
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+	width:1.3em;
+	z-index:2;
+
+}
+
+header div.nav-reveal {
+	background-color:$purple;
+	display:none;
+	height:100%;
+	position:fixed;
+	transition:200;
+	right:0;
+	width:0;
+	z-index:1;
+}
+
+header div.nav-reveal div.open-link-container {
+	display:none;
+	float:left;
+	margin-top:1.4em;
+	width:100%;
+}
+
+header div.nav-reveal a {
+	display:block;
+	font-size:0.875em;
+	padding:0;
+	margin:1.7em 0 0 1.5em;
+	@extend .hover;
+}
+
+header div.nav-reveal a.first {
+	margin-top:3.7em;
+}
+
+div.faded-layer.active {
+	background-color:rgba(40, 40, 40,0.9);
+	height:100%;
+	position:fixed;
+	width:100%;
+	z-index:1;
+}
+
+
+
+

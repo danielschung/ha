@@ -1,0 +1,168 @@
+@import 'global';
+
+@media only screen and (max-width:1220px) {
+	header.home {
+		background-position: 0 0;
+		background-size:87em;
+		height:42em;
+	}
+
+	div.wrapper div.text-container.home {
+		position:relative;
+		float:left;
+		right:0;
+	}
+}
+
+@media only screen and (max-width:950px) {
+	nav .container .inner-container {
+		display:none;
+	}
+
+	header div.wrapper div.container img.mobile-nav {
+		display:block;
+	}
+
+	section.breakout div.wrapper div.container {
+		height:auto;
+	}
+
+	section.breakout div.wrapper div.container div.left,
+	section.breakout div.wrapper div.container div.right {
+		width:100%;
+	}
+
+	footer div.wrapper div.container {
+		text-align:center;
+	}
+
+	footer div.wrapper div.container div.inner-container {
+		display:block;
+		float:none;
+		height:2em;
+		margin-top:1em;
+		text-align:center;
+		width:100%;
+	}
+}
+
+@media only screen and (max-width:848px) {
+	header.home {
+		background-position: 17% 0;
+	}
+
+	header.home div.wrapper,
+	section div.wrapper {
+		padding:0 1em;
+	}
+
+	section.intro div.container {
+		text-align:left;
+	}
+
+	section.troxell div.wrapper div.container.right {
+		position:relative;
+		margin:0 auto;
+		width:100%;
+	}
+
+	section.troxell div.wrapper div.container h2 {
+		font-size:3.5vw;
+		float:left;
+	}
+
+	section.faq div.wrapper.faq.body div.faq-box-container.left {
+		width:100%;
+	}
+
+	section.faq div.wrapper.faq.body div.faq-box-container.right {
+		clear:both;
+		float:none;
+		margin-bottom:2.7em;
+		width:100%;
+	}
+
+}
+
+@media only screen and (max-width:737px) {
+	header.home {
+		background-position: 53.4% 20%;
+	}
+
+	div.wrapper div.text-container.home h1 {
+		font-size:7vw;
+	}
+
+	div.wrapper div.text-container.home {
+		float:none;
+		text-align:center;
+		transform:translateY(17em);
+	}
+
+	div.wrapper .text-container.home h1 {
+		margin:0 auto;
+		position:relative;
+		top:-0.5em;
+	}
+
+	section.intro div.container {
+		margin:7.6875em auto 0 auto;
+	}
+
+	article.video-container {
+		border-radius:0.3125em 0.3125em 0 0 ;
+		width:97%;
+	}
+
+	div.video, div.video.back {
+		border-radius:0 0 0.3125em 0.3125em;
+		width:100%;
+	}
+
+	article.video-container div.white-box {
+		width:100%;
+	}
+
+	img.simplete-logo {
+		width:30vw;
+	}
+
+	div.inner-container a.phone-number.browser {
+		display:none;
+	}
+
+	h1 a.phone-number.mobile {
+		visibility:visible;
+	}
+
+	div.arrow-container img.arrow {
+		display:none;
+	}
+
+}
+
+@media only screen and (max-width:695px) {
+	section.troxell div.wrapper div.container h2 {
+		font-size:1.125em;
+	}
+
+	footer div.wrapper div.container {
+		margin-top: -1em;
+	}
+
+	footer div.wrapper div.container div.inner-container {
+		margin-top:-2em;
+		margin-bottom:2em;
+	}
+
+	footer div.wrapper div.container div.inner-container a.footer-item,
+	footer div.wrapper div.container div.inner-container p.footer-item {
+		display:block;
+		margin:0.5em 0;
+	}
+}
+
+
+
+
+

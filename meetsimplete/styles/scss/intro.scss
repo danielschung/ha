@@ -1,0 +1,131 @@
+@import 'global';
+
+section.intro {
+	padding-bottom:117px;
+}
+
+section.intro div.container {
+	margin:10.6875em auto 0 auto;
+	max-width:41.75em;
+	text-align:center;
+}
+
+p.zip-text {
+	color:$purple;
+	font-family:$light;
+	font-size:1.125em;
+	margin-top:4.1875em;
+}
+
+div.zip-container {
+	margin:1.875em auto 0 auto;
+	max-width:47.6875em;
+	padding:0;
+}
+
+// input.intro-input {
+// 	border:1px solid $purple;
+// 	border-radius:0.3125em 0 0 0.3125em;
+// 	height:3.75em;
+// 	padding-left:2.0625em;
+// 	width:35%;
+// }
+
+// input[type="text"].intro-input {
+// 	color:$purple;
+// 	font-family:$strong;
+// 	font-size:1em;
+// 	padding-left:2.0625em;
+// }
+
+// input.intro-input::placeholder {
+// 	color:$purple;
+// }
+
+// input:focus, button:focus {
+// 	outline:0;
+// }
+
+button.zipcode-button {
+	background-color:$purple-clear;
+	border:1px solid $purple-clear;
+	border-radius:0.3125em;
+	color:$white;
+	font-family:$strong;
+	padding:1.3125em 2.0625em;
+	margin-left:-0.3em;
+	@extend .hover;
+}
+
+article.video-container {
+	border: 1px solid #DBDBDB;
+	border-radius:0.3125em;
+	box-shadow: 15px -9px 28px -13px rgba(189,189,189,0.5);
+	height:33.4375em;
+	margin:10.4375em auto 0 auto;
+	width:80%;
+}
+
+div.video {
+	border-radius:0.3125em 0 0 0.3125em;
+	float:left;
+	height:33.4375em;
+	text-align:center;
+	@extend .hover;
+}
+
+div.video.back {
+	background-image: url("../../assets/video.jpg");
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size:63em;
+	width:50%;
+}
+
+div.video.layer {
+	background-color: rgba(248, 247, 216, 0);
+	width:100%;
+}
+
+div.video img.play {
+	margin:0 auto;
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+	width:10em;
+}
+
+div.video:hover {
+	background-color:black;
+	div.video.layer {
+		background-color: rgba(14, 14, 14, 0.7);
+	}
+}
+
+article.video-container div.white-box {
+	float:right;
+	height:33.4375em;
+	width:50%;
+}
+
+article.video-container div.white-box div.text-container {
+	margin:17% 14% 0 14%;
+}
+
+article.video-container div.white-box div.text-container h2 {
+	font-size:2.25em;
+}
+
+article.video-container div.white-box div.text-container p {
+	font-size:1.125em;
+}
+
+img.simplete-memorial {
+	margin-top:15%;
+	width:100%;
+}
+
+
+
+
+

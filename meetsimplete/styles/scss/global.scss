@@ -1,0 +1,108 @@
+//simplete colors
+$purple:#674186;
+$blue:#1ebaea;
+$yellow:#F1AF2A;
+//text colors
+$white:#ffffff;
+$whiteish:#FAFAFA;
+$black:#090012;
+$text:#6B6777;
+$light-grey:#C2C2C2;
+$border-grey:#e7e7e7;
+//button colors
+$purple-clear:#7A5399;
+$lightpurple:#B78CDA;
+//card colors
+$cardh4:#585858;
+$table-grey:#F5F5F5;
+$dark-grey:#7e7e7e;
+//plan colors
+$platinum:#84BEE8;
+$gold:#E5B54F;
+//silver = light-grey
+$bronze:#B77C18;
+
+//fonts
+$light:"Museo-Sans-100", Arial, sans;
+$regular:"Museo-Sans-300", Arial, sans;
+$strong:"Museo-Sans-500", Arial, sans;
+$bold:"Museo-Sans-700", Arial, sans;
+
+//rules
+html, body, div, header, section, main, footer, h1, h2, h3, h4, p, input, button, input, label {
+	font-size:16px;
+	margin:0;
+	padding:0;
+}
+
+div.wrapper {
+	height:100%;
+	margin:0 auto;
+	max-width:90em;
+	padding:0 2em 0 2em;
+}
+
+section {
+	height:auto;
+}
+
+.hover {
+	-o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+h1.main {
+	color:$white;
+	font-family:$light;
+	font-size:3em;
+	line-height:1.25em;
+}
+
+h2.main {
+	color:$black;
+	font-family:$light;
+	font-size:2.5em;
+	margin-bottom:0.4925em;
+}
+
+h3.main {
+	font-family:$light;
+	margin:0;
+	padding:0;
+}
+
+p.small-header {
+	color:$text;
+	font-family:$light;
+	font-size:1em;
+	margin-bottom:1.0625em;
+}
+
+p.intro-text {
+	color:$text;
+	font-family:$light;
+	font-size:1.25em;
+	line-height:1.65em;
+}
+
+strong {
+	font-family:$strong;
+}
+
+div.clear {
+	clear:both;
+}
+
+div.border {
+	border-top:1px solid $border-grey;
+}
+
+a {
+	text-decoration:none;
+	cursor:pointer;
+}
+
+
+

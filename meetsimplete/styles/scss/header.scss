@@ -1,0 +1,146 @@
+@import 'global';
+
+//rules
+header.home {
+	background-color:$black;
+	background-image: url("../../assets/home.jpg");
+	background-repeat:no-repeat;
+	background-position: 77% 10%;
+	background-size:147em;
+	height:50em;
+}
+
+nav {
+	padding-top:2.05555556em;
+}
+
+nav div.container {
+	height:2.6875em;
+	max-width:none;
+	padding-left:15px;
+	padding-right:15px;
+}
+
+nav a {
+	color:$white;
+	font-family:$strong;
+	font-size:0.875em;
+	padding:0 0.5em;
+	margin:0 1em;
+	text-decoration:none;
+	@extend .hover;
+}
+
+div.inner-container a.current {
+	font-family:$bold;
+}
+
+nav div.container div.inner-container {
+	float:right;
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+}
+
+div.inner-container a.get-in-touch {
+	border:1px $white solid;
+	border-radius:0.35714286em;
+	padding:1em;
+	text-decoration:none;
+	@extend .hover;
+}
+
+
+div.inner-container a.request-a-quote{
+	background-color:$purple-clear;
+	border:1px $purple-clear solid;
+	border-radius:0.35714286em;
+	color:$white;
+	padding:1em;
+	text-decoration:none;
+	@extend .hover;
+}
+
+a.phone-number.mobile {
+	visibility:hidden;
+	font-family:$light;
+	font-size:0.7em;
+	color:$white;
+	text-decoration:none;
+
+}
+
+div.wrapper div.text-container.home {
+	float:right;
+	position:absolute;
+	right:10%;
+	transform:translateY(77%);
+}
+
+div.wrapper div.text-container h1 {
+	max-width:11.4375em;
+}
+
+div.text-container span {
+	font-family:$bold;
+}
+
+header div.arrow-container {
+	bottom:3.0625em;
+	position:relative;
+}
+
+img.arrow {
+	display:block;
+	margin:0 auto;
+	transform: rotate(180deg);
+	width:1.5em;
+}
+
+//about header rules
+header.about {
+	background-color:$black;
+	background-image: url("../../assets/about.jpg");
+	background-repeat:no-repeat;
+	background-position: 32% 40%;
+	background-size:147em;
+	height:50em;
+}
+
+header.about div.wrapper nav div.container {
+	padding-left:46.9px;
+	padding-right:46.9px;
+}
+
+header.about div.wrapper div.text-container.about {
+	float:left;
+	height:3.125em;
+	margin:0 auto;
+	max-width:90em;
+	max-width:41.125em;
+}
+
+div.text-container.about {
+	position:relative;
+	top:8.5625em;
+	left:10%;
+}
+
+div.text-container.about h2 {
+	color:$white;
+	font-family:$light;
+	font-size:1.5em;
+	line-height:1.375em;
+	margin:1.5em 0;
+}
+
+div.text-container.about p {
+	color:$white;
+	font-family:$light;
+	font-size:1.25em;
+	line-height:1.65em;
+}
+
+
+
+

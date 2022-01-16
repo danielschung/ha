@@ -1,0 +1,36 @@
+@import 'global';
+
+footer	{
+	background-color:$purple;
+	clear:both;
+	height:auto;
+	padding:3.25em 0;
+}
+
+footer div.wrapper div.container {
+	height:auto;
+	position:relative;
+	top:50%;
+	max-width:none;
+}
+
+footer div.wrapper div.container div.inner-container {
+	float:right;
+	height:auto;
+	position:relative;
+	top:50%;
+	transform:translateY(60%);
+}
+
+
+footer div.wrapper div.container div.inner-container a,
+footer div.wrapper div.container div.inner-container p {
+	color:$white;
+	font-family:$regular;
+	font-size:0.875em;
+	padding:0 0.5em;
+	margin:0 1em;
+	text-decoration:none;
+	@extend .hover;
+	display:inline-block;
+}

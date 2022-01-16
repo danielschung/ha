@@ -1,0 +1,67 @@
+@import 'global';
+
+//plan card rules
+section.plan-picker div.wrapper div.card-container {
+	height:auto;	
+	margin:0.8125em auto 0 auto;
+	max-width:70.0625em;
+	position:relative;
+	width:100%;
+}
+
+section.plan-picker div.wrapper div.card-container div.card {
+	background-color:$white;
+	border:1px solid $border-grey;
+	border-radius:0.25em;
+	height:auto;
+	margin:0 auto 1.25em auto;
+	padding:0;
+	text-align:left;
+	width:100%;
+	display:none;
+}
+
+section.plan-picker div.wrapper div.card-container div.card.platinum {
+	border-top:0.25em solid $platinum;
+}
+
+section.plan-picker div.wrapper div.card-container div.card.gold {
+	border-top:0.25em solid $gold;
+}
+
+section.plan-picker div.wrapper div.card-container div.card.silver {
+	border-top:0.25em solid $light-grey;
+}
+
+section.plan-picker div.wrapper div.card-container div.card.bronze {
+	border-top:0.25em solid $bronze;
+}
+
+div.card div.left {
+	margin:2.3em 0 2.3em 2em;
+	float:left;
+	// min-width:26.3333333em;
+	width:50%;
+}
+
+div.card div.left h3 {
+	color:$black;
+	font-family:$bold;
+	font-size:1.5em;
+	margin-bottom:0.58333333em;
+}
+
+div.card div.left h4 {
+	color:$cardh4;
+	font-family:$regular;
+}
+
+div.card div.right div.button-container a {
+	text-decoration:none;
+}
+
+//filtering card rules
+
+section.plan-picker div.wrapper div.card-container div.card.active {
+	display:block;
+}

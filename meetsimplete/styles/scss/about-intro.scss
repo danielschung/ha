@@ -1,0 +1,90 @@
+@import 'global';
+
+section.intro.about div.wrapper,
+section.ha div.wrapper {
+	height:auto;
+}
+
+section.intro.about div.wrapper div.container {
+	display:inline-block;
+	margin:9.1875em 0 0 0;
+	padding:0;
+	text-align:left;
+	width:47%;
+
+	h2 {
+		line-height:1.25;
+	}
+
+	p.intro-text {
+		font-size:1.125em;
+		margin-top:1.5em;
+	}
+
+}
+
+section.ha div.wrapper div.container {
+	display:inline-block;
+	margin:5em 0;
+	max-width:41.75em;
+	padding:2em 0 4em 0;
+	text-align:left;
+	width:49.7%;
+}
+
+section.intro.about div.wrapper div.container.left {
+	float:left;
+
+	div.memorial-image {
+		background-image: url("../../assets/memorial-image.jpg");
+		background-position: 77% 10%;
+		height:500px;
+		margin-top:7em;
+		width:100%;
+	}
+}
+
+section.intro.about div.wrapper div.container.right {
+	float:right;
+}
+
+section.intro.about div.wrapper div.container.right div.logo-container,
+section.ha div.wrapper div.container.right div.logo-container {
+	height:300px;
+	text-align:center;
+
+	img.memorial-logo,
+	img.ha-logo {
+		margin:0 auto;
+		position:relative;
+		top:50%;
+		transform:translateY(-50%);
+		width:23.125em;
+	}
+}
+
+section.ha div.wrapper div.container.left {
+	float:left;
+
+	button.learn-more {
+		background-color:$white;
+		border:0.0625em solid $purple-clear;
+		border-radius:0.1875em;
+		color:$purple-clear;
+		display:block;
+		font-family:$regular;
+		height:3.125em;
+		position:relative;
+		top:2em;
+		width:160px;
+		@extend .hover;
+	}
+
+}
+
+section.ha div.wrapper div.container.right {
+	float:right;
+}
+
+
+
