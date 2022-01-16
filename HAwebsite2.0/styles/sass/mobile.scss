@@ -1,0 +1,25 @@
+// import
+
+@import 'main';
+
+
+// mobile variables
+
+$mobile-page-width:90%;
+
+
+// responsive rules
+
+@media screen and (max-width:1277px) { //small browser
+
+	.container-page, .container-nav, .container-findtherightplan-inner{
+		max-width:$mobile-page-width;
+	}
+
+
+}
+
+
+@media screen and (max-width:1034px) { //mobile
+
+}

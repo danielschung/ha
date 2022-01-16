@@ -1,0 +1,312 @@
+//variables
+$lightgrey:#f4f4f4;
+$grey:#e7e7e7;
+$darkgrey:#8e8e8e;
+$black:#282828;
+$whitish:#f8f8f8;
+$red:#974a4f;
+$purple:#662E93;
+$font-stack:'Roboto', sans-serif;
+$sub-font:'Source Sans Pro', sans-serif;
+
+
+//global
+html, body, h1, h2, p{
+	margin:0;
+	padding:0;
+}
+
+body {
+	background-color:$whitish;
+}
+
+
+main {
+	background-color:white;
+	height:100vh;
+	margin:0 auto;
+	max-width:70.8em;
+}
+
+h1 {
+	font-family:$font-stack;
+}
+
+h2 {
+	font-family:$sub-font;
+}
+
+p {
+	font-family:$sub-font;
+}
+
+.vertical-center {
+	position:relative;
+	top:50%;
+	transform:translateY(-50%);
+}
+
+.centered {
+	text-align:center;
+}
+
+.nav {
+	width:100%;
+}
+
+
+//main-text
+
+.page-wrapper {
+	height:100%;
+	margin:0 auto;
+	width:90%;
+}
+
+.content-wrapper {
+	display:inline-block;
+	height:650px;
+	width:100%;
+	@extend .vertical-center;
+}
+
+.main-text-wrapper {
+	margin:0;
+	position:relative;
+	top:170px; 
+	width:450px;
+}
+
+.main-h1 {
+	font-size:54px;
+	font-weight:300;
+	line-height:42px;
+	font-family:$font-stack;
+}
+
+.main-text-container {
+	float:left;
+	padding:0.2em;
+}
+
+.main-h2 {
+	font-family:$sub-font;
+	font-size: 32px;
+	line-height: 42px;
+	font-weight:300;
+	padding:0.4em 0;
+}
+
+.main-p {
+	font-family:$sub-font;
+	font-size:18px;
+	font-weight:300;
+	line-height: 31px;
+	padding:0.5em 0;
+}
+
+
+//form
+
+.form-wrapper {
+	background-color:white;
+	border-radius:4px;
+	border: 1px solid $grey;
+	border-top:4px solid $purple;
+	-webkit-box-shadow: 0px 0px 67px 14px rgba(224,224,224,0.49);
+	-moz-box-shadow: 0px 0px 67px 14px rgba(224,224,224,0.49);
+	box-shadow: 0px 0px 27px 4px rgba(224,224,224,0.49);
+	float:right;
+	height:550px;
+	top:-20px;
+	position:relative;
+	width:33.8em;
+}
+
+.form-container {
+	height:10em;
+	margin:0 auto;
+	position:relative;
+	top:2.5em;
+	width:83%;
+}
+
+.form-h2 {
+	font-size:32px;
+	font-weight:300;
+	padding:0 0.2em;
+}
+
+input {
+	background-color:$whitish;
+	border: 1px solid $grey;
+	border-radius:2px;
+	height:2.6em;
+	font-size:14px;
+	font-weight:300;
+	margin:0.44em auto;
+	outline:none;
+	padding:0 0 0 1.3em;
+}
+
+::placeholder {
+	color:$darkgrey;
+}
+
+.name-box {
+	margin-top:1em;
+	width:44%;
+}
+
+.last {
+	float:right;
+}
+
+.long-box {
+	width:95.4%;
+}
+
+.line {
+	background-color:$grey;
+	height:1px;
+	position:relative;
+	top:4.5em;
+}
+
+.second-container {
+	top:6.8em;
+}
+
+.form-center-text {
+	color:$darkgrey;
+	font-size:15px;
+	font-weight:400;
+	margin-top:20px;
+	text-align:center;
+}
+
+.form-button-container {
+	text-align:center;
+	margin-top:0.9em;
+}
+
+button {
+	outline:none;
+	-o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+}
+
+.submit-button {
+	background-color:$purple;
+	border:none;
+	border-radius:4px;
+	color:$whitish;
+	font-size:16px;
+	font-weight:300;
+	height:50px;
+	margin-top:12px;
+	width:140px;
+}
+
+.submit-button.long {
+	width:180px;
+}
+
+.submit-button:hover {
+	background-color:$black;
+}
+
+//confirmation.html
+
+.form-container-2 {
+	top:150px;
+}
+
+.form-button-container-2 {
+	margin-top:2.2em;
+}
+
+.learn-more-button {
+	background-color:$whitish;
+	border: 1px solid $grey;
+	border-radius:4px;
+	color:$black;
+	font-size:16px;
+	font-weight:300;
+	height:50px;
+	margin-right:0.4em;
+	width:177px;
+}
+
+.learn-more-button:hover {
+	background-color:$black;
+	border:none;
+	color:$whitish
+}
+
+
+@media only screen and (max-width:1105px) {
+
+	.content-wrapper {
+		height:100%;
+	}
+
+	.main-text-wrapper {
+		margin:0 auto;
+		top:60px;
+		width:100%;
+	}
+
+	.form-wrapper {
+		margin:0 auto;
+		top:70px;
+		width:100%;
+	}
+
+	.name-box {
+		max-width:50%;
+	}
+
+	.long-box {
+		width:97.5%;
+	}
+}
+
+@media only screen and (max-width:457px) {
+
+	input {
+		margin:3px 0px;
+	}
+
+	.form-wrapper {
+		margin-bottom:50px;
+	}
+
+	.name-box {
+		margin-top:0.5em;
+		max-width:100%;
+		width:97.5%;
+	}
+
+	.long-box {
+		margin-top:0.5em;
+	}
+
+	.last {
+		float:none;
+	}
+
+	.line {
+		top:5.7em;
+	}
+}
+
+
+
+
+
+
+
+
