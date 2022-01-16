@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sales Chat | Prototype</title>
+	<link rel="stylesheet" type="text/css" href="bundle/css/main.css">
+</head>
+<body>
+	<button class="help">?</button>
+	<div class="notification"></div>
+	<div class="ko">
+		<div class="header">
+			<div class="top">
+				<h3>Help</h3>
+				<img class="close" src="bundle/assets/close.svg">
+				<div class="clear"></div>
+			</div>
+			<div class="search">
+				<div class="search-icon"></div>
+				<input type="text" name="search" class="search" placeholder="Suggestions will show as you type.">
+			</div>
+		</div>
+		<div class="content">
+			<p class="large">Search our Support FAQs</p>
+			<p class="item">Individual and Employee</p>
+			<p class="item">Medicare</p>
+		</div>
+		<div class="conversation">
+			<div class="card">
+				<p class="large">Still can’t find what you need?</p>
+				<p class="xsmall-bold">Start a conversation</p>
+				<p class="xsmall">We usually respond within the hour</p>
+				<button class="purple round">Send us a message</button>
+			</div>
+		</div>
+		<div class="conversation-existing">
+			<p class="large">Continue your conversation</p>
+			<div class="chat-block">
+				<div class="notification"></div>
+				<div class="text">
+					<p class="xsmall-bold">Sales & Support <span class="bullet">&#8226;</span> 10s ago</p>
+					<p class="xsmall">Help regarding plan information</p>
+				</div>
+				<img class="arrow" src="bundle/assets/arrow-grey.svg">
+			</div>
+			<button class="simple">Start a new message</button>
+		</div>
+		<div class="footer">
+			<p class="external">Open in full site</p>
+			<p class="scroll">Scroll to top</p>
+		</div>
+	</div>
+
+	<div class="chat">
+		<div class="header">
+			<img class="arrow" src="bundle/assets/arrow-white.svg">
+			<div class="text">
+				<p class="large">Health Alliance</p>
+				<p class="small">We're here to help!</p>
+			</div>
+			<img class="minus" src="bundle/assets/minus.svg">
+			<img class="close" src="bundle/assets/close.svg">
+		</div>
+		<div class="disclaimer">
+			<p class="xsmall">By starting this chat, you have agreed to discuss medicare advantage products in the future.</p>
+			<img class="close" src="bundle/assets/close-black.svg">
+		</div>
+		<div class="log" id="log">
+			<div class="date">Today</div>
+			<div class="entry sales option first">
+				<div class="bubble">Hello, I am your Virtual Assistant from Health Alliance. First off, are you a current member?</div>
+				<div class="options">
+					<div class="no">No</div>
+					<div class="yes">Yes</div>
+				</div>
+			</div>
+		</div>
+		<div class="confirm-close" id="confirm-close">
+			<div class="container">
+				<p class="normal">Are you sure you want to end the conversation?</p>
+				<div class="options">
+					<div class="no">No</div>
+					<div class="yes">Yes</div>
+				</div>
+			</div>
+		</div>
+		<div class="type">
+			<textarea rows="1" placeholder="Start typing..."></textarea>
+			<img class="attachment" src="bundle/assets/attachment.svg"></img>
+			<img class="send" src="bundle/assets/send.svg"></img>
+		</div>
+	</div>
+
+	<nav>
+		<img class="logo" src="bundle/assets/logo.png">
+		<ul>
+			<li>Sales Chat | Prototype</li>
+			<li id="simulate-notification">Simulate Notification</li>
+		</ul>
+		<button>Log In</button>
+	</nav>
+
+	<div class="wrapper">
+		<div class="container hero-right">
+			<div class="left">
+				<h1>Welcome to Medicare made for you.</h1>
+				<p class="xlarge">Get a health plan made with you in mind – access to doctors you trust, pharmacy coverage, perks you deserve and customer service reps always ready to help.</p>
+				<button class="purple round">Shop Plans</button>
+				<button class="round">How to Enroll</button>
+			</div>
+			<div class="right">
+				<img src="bundle/assets/hero.jpg">
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="container">
+			<h2>About Medicare Advantage</h2>
+			<p class="large">Medicare Advantage (also called Part C) replaces Original Medicare and is sold and managed by private insurance companies. Like Original Medicare, all Medicare Advantage plans include Part A (hospital coverage) and Part B (medical coverage).</p>
+		</div>
+	</div>
+
+	<!-- js -->
+  <script src="bundle/js/jquery.min.js"></script>
+  <script src="bundle/js/main.js"></script>
+
+</body>
+</html>

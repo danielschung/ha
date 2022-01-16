@@ -1,0 +1,107 @@
+button {
+	background-color: transparent;
+	border: 1px solid $purple-70;
+	border-radius: 4px;
+	color: $purple-70;
+	cursor: pointer;
+	font-family: $avenir-medium;
+	font-size: 18px;
+	margin-right: 16px;
+	padding: 12px 24px;
+	@include hover;
+}
+
+button.purple {
+	background-color: $purple-70;
+	color: $white;
+}
+
+button.round {
+	border-radius: 50px;
+}
+
+button:focus {
+	outline: 0;
+}
+
+button:hover {
+	background-color: $purple-70;
+	border: 1px solid $purple-70;
+	color: $white;
+}
+
+button.purple:hover {
+	background-color: $purple-80;
+	border: 1px solid $purple-80;
+}
+
+button.help {
+	border: 2px solid $purple-70;
+	border-radius: 50px;
+	bottom: 25px;
+	cursor: pointer;
+	height: 50px;
+	padding: 0;
+	position: fixed;
+	right: 25px;
+	width: 50px;
+}
+
+div.notification {
+	background-color:$purple-70;
+	border: 3px solid $white;
+	border-radius: 50px;
+	bottom: 51px;
+	height: 24px; //24px on show
+	position: fixed;
+	right: 30px; 
+	width: 24px; //24px on show
+	transform: scale(0);
+	transition: all 100ms cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+div.notification.show {
+	transform: scale(1);
+}
+
+input {
+	width:90%;
+	@include p-normal;
+}
+
+input:focus {
+	outline: 0;
+}
+
+div.search {
+	background-color: $white;
+	border: 1px solid $dark-30;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: $dark-50;
+	padding: 10px 12px;
+
+	div.search-icon {
+		background-image: url('../assets/search.svg');
+		display: inline-block;
+		float: left;
+		height: 22px;
+		margin-top: 2.1px;
+		position: absolute;
+		width: 22px;
+	}
+
+	input {
+		padding-left: 30px;
+		background-color: transparent;
+		border: none;
+	}
+}
+
+
+
+
+
+
+
+

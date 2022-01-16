@@ -1,0 +1,138 @@
+@import 'colors';
+
+$avenir-regular: 'avenir-regular', 'sans';
+$avenir-medium: 'avenir-medium', 'sans';
+$avenir-demi: 'avenir-demi', 'sans';
+$zenon-bold: 'zenon-bold', 'sans-serif';
+
+@font-face {
+  font-family: 'avenir-regular';
+  src: url(../fonts/avenir-regular.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'avenir-medium';
+  src: url(../fonts/avenir-medium.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'avenir-demi';
+  src: url(../fonts/avenir-demi.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'zenon-bold';
+  src: url(../fonts/zenon-bold.otf) format('opentype');
+}
+
+h1, h2, h3, h4, h5, p, li, span, a, em, strong { 
+  margin:0;
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering:optimizeLegibility !important; 
+}
+
+h1 {
+	font-family: $zenon-bold;
+	font-size: 60px;
+	line-height: 64px;
+	letter-spacing: -0.01em;
+	color: $grey-80;
+	margin-bottom: 24px;
+}
+
+h2 {
+	font-family: $zenon-bold;
+	font-size: 41px;
+	line-height: 48px;
+	letter-spacing: -0.01em;
+	color: $grey-80;
+	margin-bottom: 24px;
+}
+
+h3 {
+	font-family: $zenon-bold;
+	font-size: 31px;
+	line-height: 40px;
+	letter-spacing: -0.01em;
+	color: $grey-80;
+	margin-bottom: 16px;
+}
+
+@mixin p-tiny {
+	color: $grey-80;
+	font-family: $avenir-regular;
+	font-size: 10px;
+	line-height: 12px;
+}
+
+@mixin p-xsmall {
+	color: $black;
+	font-family: $avenir-regular;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+@mixin p-small {
+	color: $black;
+	font-family: $avenir-regular;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.01em;
+	margin-bottom: 32px;
+}
+
+@mixin p-normal {
+	color: $black;
+	font-family: $avenir-regular;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: -0.01em;
+}
+
+@mixin p-large {
+	color: $black;
+	font-family: $avenir-regular;
+	font-size: 20px;
+	line-height: 28px;
+	letter-spacing: -0.01em;
+	margin-bottom: 32px;
+}
+
+@mixin p-xlarge {
+	color: $black;
+	font-family: $avenir-regular;
+	font-size: 24px;
+	line-height: 32px;
+	letter-spacing: -0.01em;
+	margin-bottom: 32px;
+}
+
+p.tiny {
+	@include p-tiny;
+}
+
+p.xsmall {
+	@include p-xsmall;
+}
+
+p.small {
+	@include p-small;
+}
+
+p.normal {
+	@include p-normal;
+}
+
+p.large {
+	@include p-large;
+}
+
+p.xlarge {
+	@include p-xlarge;
+}
+
+span.bullet {
+	color: $grey-50;
+}

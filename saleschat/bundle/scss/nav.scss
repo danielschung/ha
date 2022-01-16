@@ -1,0 +1,32 @@
+@import 'fonts';
+
+nav {
+	background-color: $white;
+	box-shadow: 0px 2px 4px rgba(32, 35, 37, 0.08);
+	padding: 20px $wrapper;
+
+	img.logo {
+		float: left;
+		margin-right : 47px;
+		width: 175.14px;
+	}
+
+	ul {
+		display: inline-block;
+
+		li {
+			align-items: center;
+			display: inline;
+			font-family: $avenir-medium;
+			font-size: 17px;
+			letter-spacing: 0.02em;
+			line-height: 24px;
+			margin-right: 28px;
+			padding: 8px 10px;
+		}
+	}
+
+	button {
+		float: right;
+	}
+}
