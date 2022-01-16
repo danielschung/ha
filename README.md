@@ -1,2 +1,2 @@
 # What is this?
-This repository is my personal, design sandbox for random Health Alliance (ha) projects done during my time at Carle Health.
+This is a design sandbox for high-fi prototypes, low-fi prototypes, backlog, and experimental projects for Health Alliance during my time at Carle Health.
