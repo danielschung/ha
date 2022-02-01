@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Design System | Accordions</title>
+  <link rel="stylesheet" type="text/css" href="./bundle/ha-internal.css">
+</head>
+<body class="ds">
+  <nav>
+    <div class="ha-logo whole"></div>
+  </nav>
+  <div class="sidenav">
+    <div class="instance">
+      <a href="./index.html">Overview</a>
+    </div>
+    <div class="instance current">
+      <a href="./accordions.html">Accordions</a>
+    </div>
+    <div class="instance">
+      <a href="./buttons.html">Buttons</a>
+    </div>
+    <div class="instance">
+      <a href="./colors.html">Colors</a>
+    </div>
+    <div class="instance">
+      <a href="./containers.html">Containers</a>
+    </div>
+    <div class="instance">
+      <a href="./dropdowns.html">Dropdowns</a>
+    </div>
+    <div class="instance">
+      <a href="./inputs.html">Inputs</a>
+    </div>
+    <div class="instance">
+      <a href="./layouts.html">Layouts</a>
+    </div>
+    <div class="instance">
+      <a href="./typography.html">Typography</a>
+    </div>
+    <div class="instance">
+      <a href="./dms-guide.html">DMS Style Guide</a>
+    </div>
+    <div class="instance">
+      <a href="./portal-guide.html">Portal Guide</a>
+    </div>
+  </div>
+  <div class="main">
+    <h1 class="sg">Accordions</h1>
+    <p class="sg-large">Accordions are components that expand on click to reveal hidden content.</p>
+
+    <h3 class="sg">Divider Accordions <span class="tag css"></span><span class="tag js"></span></h3>
+    <p class="sg">Divider accordions are built from the divider container styles. It contains a hidden div that expands on clicking the component. Everything hidden must belong inside the hidden div.</p>
+    
+    <div class="accordion divider">
+      <p>Content</p>
+      <div class="hidden">
+        <p>[Hidden content]</p>
+      </div>
+    </div>
+    <div class="accordion divider">
+      <p>Content</p>
+      <div class="hidden">
+        <p>[Hidden content]</p>
+      </div>
+    </div>
+
+<pre class="sg">
+&lt;div class="accordion divider"&gt;
+  &lt;p&gt;Content&lt;/p&gt;
+  &lt;div class="hidden"&gt;
+    &lt;p&gt;[Hidden content]&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    
+    <h3 class="sg">Colored Accordions <span class="tag css"></span><span class="tag js"></span></h3>
+    <p class="sg">Colored accordions are built from the color container sytles. It contains a hidden div that expands on clicking the component. Everything hidden must belong inside the hidden div.</p>
+
+    <div class="accordion colored">
+      <p>Content</p>
+      <div class="hidden">
+        <p>[Hidden content]</p>
+      </div>
+    </div>
+    <div class="accordion colored">
+      <p>Content</p>
+      <div class="hidden">
+        <p>[Hidden content]</p>
+      </div>
+    </div>
+
+<pre class="sg">
+&lt;div class="accordion colored"&gt;
+  &lt;p&gt;Content&lt;/p&gt;
+  &lt;div class="hidden"&gt;
+    &lt;p&gt;[Hidden content]&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+    
+  </div>
+
+  <script type="text/javascript" src="./bundle/ha-internal.js"></script>
+  <script>
+    include( accordion() );
+  </script>
+  
+</body>
+</html>

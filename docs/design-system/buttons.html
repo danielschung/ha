@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Design System | Buttons</title>
+  <link rel="stylesheet" type="text/css" href="./bundle/ha-internal.css">
+</head>
+<body class="ds">
+  <nav>
+    <div class="ha-logo whole"></div>
+  </nav>
+  <div class="sidenav">
+    <div class="instance">
+      <a href="./index.html">Overview</a>
+    </div>
+    <div class="instance">
+      <a href="./accordions.html">Accordions</a>
+    </div>
+    <div class="instance current">
+      <a href="./buttons.html">Buttons</a>
+    </div>
+    <div class="instance">
+      <a href="./colors.html">Colors</a>
+    </div>
+    <div class="instance">
+      <a href="./containers.html">Containers</a>
+    </div>
+    <div class="instance">
+      <a href="./dropdowns.html">Dropdowns</a>
+    </div>
+    <div class="instance">
+      <a href="./inputs.html">Inputs</a>
+    </div>
+    <div class="instance">
+      <a href="./layouts.html">Layouts</a>
+    </div>
+    <div class="instance">
+      <a href="./typography.html">Typography</a>
+    </div>
+    <div class="instance">
+      <a href="./dms-guide.html">DMS Style Guide</a>
+    </div>
+    <div class="instance">
+      <a href="./portal-guide.html">Portal Guide</a>
+    </div>
+  </div>
+  <div class="main">
+    <h1 class="sg">Buttons</h1>
+    <p class="sg-large">Button styles can be achieved by placing a mix of classes on the button. Functionality of components requires ha-internal.js.</p>
+    <div class="component">
+      <h4 class="sg">Purple <span class="tag css"></span></h4>
+      <button class="purple">Default</button>
+      <button class="purple" disabled>Disabled</button>
+      <pre class="sg">&lt;button class="purple"&gt;Default&lt;/button&gt;</pre>
+    </div>
+    <div class="component">
+      <h4 class="sg">Clear <span class="tag css"></span></h4>
+      <button class="clear">Default</button>
+      <button class="clear" disabled>Disabled</button>
+      <pre class="sg">&lt;button class="clear"&gt;Default&lt;/button&gt;</pre>
+    </div>
+    <div class="component">
+      <h4 class="sg">Small <span class="tag css"></span></h4>
+      <button class="small">Default</button>
+      <button class="small" disabled>Disabled</button>
+      <pre class="sg">&lt;button class="small"&gt;Default&lt;/button&gt;</pre>
+    </div>
+    <div class="line"></div>
+
+    <h2 class="sg">Small Buttons</h2>
+    <p class="sg">The small class can be added to any button to achive a smaller button size.</p>
+    <div class="component">
+      <h4 class="sg">Purple Small <span class="tag css"></span></h4>
+      <button class="purple small">Default</button>
+      <button class="purple small" disabled>Disabled</button>
+      <pre class="sg">&lt;button class="purple small"&gt;Default&lt;/button&gt;</pre>
+    </div>
+    <div class="component">
+      <h4 class="sg">Clear Small <span class="tag css"></span></h4>
+      <button class="clear small">Default</button>
+      <button class="clear small" disabled>Disabled</button>
+      <pre class="sg">&lt;button class="clear small"&gt;Default&lt;/button&gt;</pre>
+    </div>
+    <div class="component">
+      <h4 class="sg">Small Success <span class="tag css"></span></h4>
+      <button class="small success">Default</button>
+      <button class="small success" disabled>Disabled</button>
+      <pre class="sg">&lt;button class="small success"&gt;Default&lt;/button&gt;</pre>
+    </div>
+    <div class="line"></div>
+
+    <h2 class="sg">Round Buttons</h2>
+    <p class="sg">The round class can also be added to any button to achive the round button varient.</p>
+    <div class="component">
+      <h4 class="sg">Purple Round <span class="tag css"></span></h4>
+      <button class="purple round">Default</button>
+      <button class="purple round" disabled>Disabled</button>
+      <pre class="sg">&lt;button class="purple round"&gt;Default&lt;/button&gt;</pre>
+    </div>
+    <div class="component">
+      <h4 class="sg">Clear Round <span class="tag css"></span></h4>
+      <button class="clear round">Default</button>
+      <button class="clear round" disabled>Disabled</button>
+      <pre class="sg">&lt;button class="clear round"&gt;Default&lt;/button&gt;</pre>
+    </div>
+    <div class="component">
+      <h4 class="sg">Small Round <span class="tag css"></span></h4>
+      <button class="small round">Default</button>
+      <button class="small round" disabled>Disabled</button>
+      <pre class="sg">&lt;button class="small round"&gt;Default&lt;/button&gt;</pre>
+    </div>
+    <div class="component">
+      <h4 class="sg">Purple Small Round <span class="tag css"></span></h4>
+      <button class="purple small round">Default</button>
+      <button class="purple small round" disabled>Disabled</button>
+      <pre class="sg">&lt;button class="purple small round"&gt;Default&lt;/button&gt;</pre>
+    </div>
+    <div class="component">
+      <h4 class="sg">Clear Small Round <span class="tag css"></span></h4>
+      <button class="clear small round">Default</button>
+      <button class="clear small round" disabled>Disabled</button>
+      <pre class="sg">&lt;button class="clear small round"&gt;Default&lt;/button&gt;</pre>
+    </div>
+    <div class="line"></div>
+
+    <h2 class="sg">Text Buttons <span class="tag css"></span></h2>
+    <p class="sg">Text buttons use the icomoon icon "arrow-right2" and can be inserted using an i tag with class "arrow-right2" inside the button.</p>
+    <div class="component">
+      <button class="text">Default<i class="icon-argrid-x grid-margin-x-right2"></i></button>
+    </div>
+    <pre class="sg">&lt;button class="text"&gt;Default&lt;i class="icon-arrow-right2"&gt;&lt;/i&gt;&lt;/button&gt;</pre>
+    <div class="line"></div>
+
+    <h2 class="sg">Circle Button <span class="tag css"></span><span class="tag js"></span></h2>
+    <p class="sg">The Circle button displays alternative options on click. It requires a white icon, which can be achieved by adding a class "white" on the icon. On click, the alternative options div will be displayed. This div must be the next sibling element after the circle button.</p>
+    <button class="circle"><i class="icon-add white"></i></button>
+    <div>
+      <button class="clear round">Option 1</button>
+      <button class="clear round">Option 2</button>
+    </div>
+<pre class="sg">
+&lt;button class="circle"&gt;&lt;/button&gt;
+&lt;div&gt; &lt;!--must go right after circle button --&gt;
+&lt;button class="clear round"&gt;Option 1&lt;/button&gt;
+&lt;button class="clear round"&gt;Option 2&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+    <h4 class="sg">Initialize</h4>
+<pre class="sg">
+&lt;script&gt;
+  include(circleButton());
+&lt;/script&gt;
+</pre>
+    <div class="line"></div>
+
+    <h2 class="sg">Options Button <span class="tag css"></span><span class="tag js"></span></h2>
+    <p class="sg">The options button reveals more options on click.</p>
+    <button class="options"></button>
+    <div>
+      <ul>
+        <li>Item</li>
+        <li class="list">List <div class="argrid-x grid-margin-x-right right"></div></li>
+        <div class="menu">
+          <ul>
+            <li>Menu Item</li>
+            <li>Menu item</li>
+            <li>Menu item</li>
+          </ul>
+        </div>
+      </ul>
+    </div>
+<pre class="sg">
+&lt;button class="options"&gt;&lt;/button&gt;
+&lt;div&gt; &lt;!--must go right after options button --&gt;
+  &lt;ul&gt; &lt;!--list out options in the ul --&gt;
+    &lt;li&gt;Item&lt;/li&gt;
+    &lt;li class="list"&gt;List &lt;div class="arrow-right right&gt;&lt;/div&gt;&lt;/li&gt;
+    &lt;div&gt; &lt;!--must go right after li.list --&gt;
+      &lt;ul&gt;
+        &lt;li&gt;Menu Item&lt;/li&gt;
+        &lt;li&gt;Menu Item&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/div&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+    <h4 class="sg">Initialize</h4>
+<pre class="sg">
+&lt;script&gt;
+  include(optionsButton());
+&lt;/script&gt;
+</pre>
+    <div class="line"></div>
+
+    <h2 class="sg">Favorite Button <span class="tag css"></span><span class="tag js"></span></h2>
+    <p class="sg">The favorite button can be applied with or without text. Clicking the component applies class active which makes it gold.</p>
+    <button class="favorite"><div class="star"></div>Mark as Favorite</button>
+<pre class="sg">
+&lt;button class="favorite"&gt;&lt;div class="star"&gt;&lt;/div&gt;Mark as Favorite&lt;/button&gt;
+</pre>
+    <h4 class="sg">Initialize</h4>
+<pre class="sg">
+&lt;script&gt;
+  include(favoriteButton());
+&lt;/script&gt;
+</pre>
+    <div class="line"></div>
+
+
+    <!-- <h3 class="sg">Filter Button</h3>
+    <p class="sg">Filter buttons display alternative options on click. It has the same style as the small button, so it can be applied with the a "small" on the button. Since it has additional functionality, it requires a class "filter" as well. On click, the alternative options div will be displayed. This div must be the next sibling elemnt after the circle button.</p>
+    <div class="filter">
+      <button class="small filter"><div class="filter-icon"></div>Filter</button>
+      <div>
+        <div class="container left">
+          <div class="select small">
+            <label for="small-dropdown"></label>
+            <select id="small-dropdown">
+              <option value="" selected>Year</option>
+              <option value="option 1">Option 1</option>
+              <option value="option 2">Option 2</option>
+              <option value="option 3">Option 3</option>
+            </select>
+            <div></div>
+          </div>
+          <div class="select small">
+            <label for="small-dropdown"></label>
+            <select id="small-dropdown">
+              <option value="" selected>Category Type</option>
+              <option value="option 1">Option 1</option>
+              <option value="option 2">Option 2</option>
+              <option value="option 3">Option 3</option>
+            </select>
+            <div></div>
+          </div>
+        </div>
+        <div class="container right">
+          <div class="select small">
+            <label for="small-dropdown"></label>
+            <select id="small-dropdown">
+              <option value="" selected>Portal</option>
+              <option value="option 1">Option 1</option>
+              <option value="option 2">Option 2</option>
+              <option value="option 3">Option 3</option>
+            </select>
+            <div></div>
+          </div>
+          <div class="select small">
+            <label for="small-dropdown"></label>
+            <select id="small-dropdown">
+              <option value="" selected>Product</option>
+              <option value="option 1">Option 1</option>
+              <option value="option 2">Option 2</option>
+              <option value="option 3">Option 3</option>
+            </select>
+            <div></div>
+          </div>
+          <div class="select small">
+            <label for="small-dropdown"></label>
+            <select id="small-dropdown" disabled>
+              <option value="" selected>Region</option>
+              <option value="option 1">Option 1</option>
+              <option value="option 2">Option 2</option>
+              <option value="option 3">Option 3</option>
+            </select>
+            <div></div>
+          </div>
+          <div class="select small">
+            <label for="small-dropdown"></label>
+            <select id="small-dropdown" disabled>
+              <option value="" selected>Material Type</option>
+              <option value="option 1">Option 1</option>
+              <option value="option 2">Option 2</option>
+              <option value="option 3">Option 3</option>
+            </select>
+            <div></div>
+          </div>
+        </div>
+        <div class="bottom">
+          <div class="input">
+            <input type="checkbox" id="toggle">
+            <label for="toggle">Show Archived</label>
+            <div class="toggle"></div>
+          </div>
+          <div class="container right">
+            <button class="text">Reset</button>
+            <button class="purple small">Apply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div> -->
+
+    <h2 class="sg">Tabs <span class="tag css"></span></h2>
+    <p class="sg">Tabs can be achieved by creating a div with class "tabs" that contains at least one div with class "tab-header" and a div with class "content." The "content" div contains the tab content and needs to be the last child.</p>
+    <div class="tabs">
+      <div class="tab-header active">Option 1</div>
+      <div class="tab-header">Option 2</div>
+      <div class="tab-header">Option 3</div>
+      <div class="content"></div>
+    </div>
+<pre class="sg">
+&lt;div class="tabs"&gt;
+  &lt;div class="tab-header active&gt;Option 1&lt;/div&gt;
+  &lt;div class="tab-header&gt;Option 2&lt;/div&gt;
+  &lt;div class="tab-header&gt;Option 3&lt;/div&gt;
+  &lt;div class="content&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+  </div>
+
+  <script type="text/javascript" src="./bundle/ha-internal.js"></script>
+  <script>
+    include( circleButton(), optionsButton(), filterButton(), tab(), favoriteButton() );
+  </script>
+
+</body>
+</html>

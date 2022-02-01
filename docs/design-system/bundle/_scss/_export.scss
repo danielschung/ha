@@ -1,0 +1,20 @@
+//exports all ds (design system) scss into compressed ha-internal.css file
+
+/*
+to compile css in terminal (cd design-system as root directory)
+sass --watch bundle/_scss/_export.scss:bundle/ha-internal.css --style compressed
+*/
+
+@import 'typography';
+@import 'colors';
+@import 'assets';
+@import 'global';
+@import 'setup';
+@import 'buttons';
+@import 'inputs';
+@import 'dropdowns';
+@import 'dms';
+@import 'layout';
+@import 'containers';
+@import 'accordions';
+@import 'fr';

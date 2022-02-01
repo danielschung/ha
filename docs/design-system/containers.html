@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Design System | Containers</title>
+  <link rel="stylesheet" type="text/css" href="./bundle/ha-internal.css">
+</head>
+<body class="ds">
+  <nav>
+    <div class="ha-logo whole"></div>
+  </nav>
+  <div class="sidenav">
+    <div class="instance">
+      <a href="./index.html">Overview</a>
+    </div>
+    <div class="instance">
+      <a href="./accordions.html">Accordions</a>
+    </div>
+    <div class="instance">
+      <a href="./buttons.html">Buttons</a>
+    </div>
+    <div class="instance">
+      <a href="./colors.html">Colors</a>
+    </div>
+    <div class="instance current">
+      <a href="./containers.html">Containers</a>
+    </div>
+    <div class="instance">
+      <a href="./dropdowns.html">Dropdowns</a>
+    </div>
+    <div class="instance">
+      <a href="./inputs.html">Inputs</a>
+    </div>
+    <div class="instance">
+      <a href="./layouts.html">Layouts</a>
+    </div>
+    <div class="instance">
+      <a href="./typography.html">Typography</a>
+    </div>
+    <div class="instance">
+      <a href="./dms-guide.html">DMS Style Guide</a>
+    </div>
+    <div class="instance">
+      <a href="./portal-guide.html">Portal Guide</a>
+    </div>
+  </div>
+  <div class="main">
+    <h1 class="sg">Containers</h1>
+    <p class="sg-large">The containers in this design system cover most cases. Used in tandem with the auto-grid system and layout classes, you can achieve total control over the content within containers. Define a container by applying class <code>container</code> to a div.</p>
+<!--     <pre class="sg">&lt;div class="container"&gt;&lt;/div&gt;</pre> -->
+
+    <h3 class="sg">Width Containers</h3>
+    <p class="sg">Width containers are typically used as page wrappers. These containers apply a method to the design system to give control classes for the various widths you might want to achieve.</p>
+
+    <h4 class="sg">Full Container <span class="tag css"></span></h4>
+    <p class="sg">To achieve a container that reaches the entire width of the parent element, apply class <code>full</code> to the container. To ensure it stretches the entire width of the browser, make sure it is a child of the body.</p>
+    <div class="full for-show center"><p class="purple-50 vertical-center">This container has full width.</p></div>
+    <pre class="sg">&lt;div class="full"&gt;&lt;/div&gt;</pre>
+
+    <h4 class="sg">Container Limit <span class="tag css"></span></h4>
+    <p class="sg">Limited containers have a max-width of 1200px and are centered on the parent. To center it on the page, make sure it is a child of the body.</p>
+    <div class="full for-show-red center">
+      <div class="limit for-show"><p class="purple-50 vertical-center">This container has limited width.</p></div>
+    </div>
+    <pre class="sg">&lt;div class="limit"&gt;&lt;/div&gt;</pre>
+
+    <div class="line"></div>
+
+    <h2 class="sg">Colored Container <span class="tag css"></span></h2>
+    <p class="sg">In some cases you might want a simple container with a colored background. In these cases, just add class for the color you'd like to add. It will apply padding and border-radius styles as well.</p>
+
+    <div class="purple-30">
+      <p>This div is purple and has padding and border-radius styles applied.</p>
+    </div>
+
+<pre class="sg">
+&lt;div class="purple-30"&gt;
+  &lt;p&gt;This div is purple and has padding and border-radius styles applied.&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+
+    
+    <div class="line"></div>
+
+    <h2 class="sg">Closed Container <span class="tag css"></span></h2>
+    <p class="sg">In other cases, you might want a container to have a card-like appearance without the interactivity of a card component. Closed containers apply the card border styles in a simple container. It is applied with class <code>closed</code>. The background-color of the closed container can also be set by adding a color class to the element.</p>
+
+    <div class="closed">
+      <p>This container has a card-like appearance.</p>
+    </div>
+
+<pre class="sg">
+&lt;div class="closed"&gt;
+  &lt;p&gt;This container has a card-like appearance.&lt;/p&gt;
+&lt;/div&gt;</pre>
+
+    <div class="line"></div>
+
+    <h2 class="sg">Divider Container <span class="tag css"></span></h2>
+    <p class="sg">Divider containers are open aside from a gray border at the bottom. It can be used in cases where you need a single divider between listed components.</p>
+
+    <h4 class="sg">One Column Example</h4>
+    <div class="divider">
+      <p>row 1</p>
+    </div>
+    <div class="divider">
+      <p>row 2</p>
+    </div>
+    <div class="divider">
+      <p>row 3</p>
+    </div>
+
+<pre class="sg">
+&lt;div class="divider"&gt;
+  &lt;p&gt;row 1&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="divider"&gt;
+  &lt;p&gt;row 2&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="divider"&gt;
+  &lt;p&gt;row 3&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+
+    <h4 class="sg">Two Column Example</h4>
+
+    <div class="divider">
+      <div class="auto-grid">
+        <div class="column">
+          <p class="vertical-center">row 1</p>
+        </div>
+        <div class="column right">
+          <button class="clear small">Button</button>
+        </div>
+      </div>
+    </div>
+    <div class="divider">
+      <div class="auto-grid">
+        <div class="column">
+          <p class="vertical-center">row 2</p>
+        </div>
+        <div class="column right">
+          <button class="clear small">Button</button>
+        </div>
+      </div>
+    </div>
+    <div class="divider">
+      <div class="auto-grid">
+        <div class="column">
+          <p class="vertical-center">row 3</p>
+        </div>
+        <div class="column right">
+          <button class="clear small">Button</button>
+        </div>
+      </div>
+    </div>
+
+<pre class="sg">
+&lt;div class="divider"&gt;
+  &lt;div class="auto-grid"&gt;
+    &lt;div class="column"&gt;
+      &lt;p class="vertical-center"&gt;row 1&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="column right"&gt;
+      &lt;button class="clear small"&gt;Button&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="divider"&gt;
+  &lt;div class="auto-grid"&gt;
+    &lt;div class="column"&gt;
+      &lt;p class="vertical-center"&gt;row 2&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="column right"&gt;
+      &lt;button class="clear small"&gt;Button&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="divider"&gt;
+  &lt;div class="auto-grid"&gt;
+    &lt;div class="column"&gt;
+      &lt;p class="vertical-center"&gt;row 3&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="column right"&gt;
+      &lt;button class="clear small"&gt;Button&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+  </div>
+
+  <script type="text/javascript" src="./bundle/ha-internal.js"></script>
+  <script>
+    include( dropdown(), checkboxRadioInput() );
+  </script>
+  
+</body>
+</html>

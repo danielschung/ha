@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Design System | Layouts</title>
+  <link rel="stylesheet" type="text/css" href="./bundle/ha-internal.css">
+</head>
+<body class="ds">
+  <nav>
+    <div class="ha-logo whole"></div>
+  </nav>
+  <div class="sidenav">
+    <div class="instance">
+      <a href="./index.html">Overview</a>
+    </div>
+    <div class="instance">
+      <a href="./accordions.html">Accordions</a>
+    </div>
+    <div class="instance">
+      <a href="./buttons.html">Buttons</a>
+    </div>
+    <div class="instance">
+      <a href="./colors.html">Colors</a>
+    </div>
+    <div class="instance">
+      <a href="./containers.html">Containers</a>
+    </div>
+    <div class="instance">
+      <a href="./dropdowns.html">Dropdowns</a>
+    </div>
+    <div class="instance">
+      <a href="./inputs.html">Inputs</a>
+    </div>
+    <div class="instance current">
+      <a href="./layouts.html">Layouts</a>
+    </div>
+    <div class="instance">
+      <a href="./typography.html">Typography</a>
+    </div>
+    <div class="instance">
+      <a href="./dms-guide.html">DMS Style Guide</a>
+    </div>
+    <div class="instance">
+      <a href="./portal-guide.html">Portal Guide</a>
+    </div>
+  </div>
+  <div class="main">
+    <h1 class="sg">Layouts</h1>
+    <h3 class="sg">Auto Grid System <span class="tag css"></span></h3>
+    <p class="sg">The grid system consists of <span class="red-20">auto-grids</span> and <span class="purple-20">cell</span>. An auto-grid holds a number of child cell. The auto-grid reads the number of cell as child elements and automatically sets even spacing and width for all column divs. The auto grid works for up to 8 cell.</p>
+
+    <div class="auto-grid for-show">
+      <div class="column">
+        <h4>1</h4>
+      </div>
+    </div>
+
+    <div class="auto-grid for-show">
+      <div class="column">
+        <h4>1</h4>
+      </div>
+      <div class="column">
+         <h4>2</h4>
+      </div>
+    </div>
+ 
+    <div class="auto-grid for-show">
+      <div class="column">
+        <h4>1</h4>
+      </div> 
+      <div class="column">
+        <h4>2</h4>
+      </div>
+      <div class="column">
+        <h4>3</h4>
+      </div>     
+    </div>
+
+    <div class="auto-grid for-show">
+      <div class="column">
+        <h4>1</h4>
+      </div> 
+      <div class="column">
+        <h4>2</h4>
+      </div>
+      <div class="column">
+        <h4>3</h4>
+      </div> 
+      <div class="column">
+        <h4>4</h4>
+      </div>     
+    </div>
+
+    <div class="auto-grid for-show">
+      <div class="column">
+        <h4>1</h4>
+      </div> 
+      <div class="column">
+        <h4>2</h4>
+      </div>
+      <div class="column">
+        <h4>3</h4>
+      </div> 
+      <div class="column">
+        <h4>4</h4>
+      </div>    
+      <div class="column">
+        <h4>5</h4>
+      </div> 
+    </div>
+
+    <div class="auto-grid for-show">
+      <div class="column">
+        <h4>1</h4>
+      </div> 
+      <div class="column">
+        <h4>2</h4>
+      </div>
+      <div class="column">
+        <h4>3</h4>
+      </div> 
+      <div class="column">
+        <h4>4</h4>
+      </div>    
+      <div class="column">
+        <h4>5</h4>
+      </div> 
+      <div class="column">
+        <h4>6</h4>
+      </div> 
+    </div>
+
+    <div class="auto-grid for-show">
+      <div class="column">
+        <h4>1</h4>
+      </div> 
+      <div class="column">
+        <h4>2</h4>
+      </div>
+      <div class="column">
+        <h4>3</h4>
+      </div> 
+      <div class="column">
+        <h4>4</h4>
+      </div>    
+      <div class="column">
+        <h4>5</h4>
+      </div> 
+      <div class="column">
+        <h4>6</h4>
+      </div> 
+      <div class="column">
+        <h4>7</h4>
+      </div> 
+    </div>
+
+    <div class="auto-grid for-show">
+      <div class="column">
+        <h4>1</h4>
+      </div> 
+      <div class="column">
+        <h4>2</h4>
+      </div>
+      <div class="column">
+        <h4>3</h4>
+      </div> 
+      <div class="column">
+        <h4>4</h4>
+      </div>    
+      <div class="column">
+        <h4>5</h4>
+      </div> 
+      <div class="column">
+        <h4>6</h4>
+      </div> 
+      <div class="column">
+        <h4>7</h4>
+      </div> 
+      <div class="column">
+        <h4>8</h4>
+      </div>
+    </div>
+
+<pre class="sg">
+&lt;div class="auto-grid"&gt;
+  &lt;div class="column"&gt;&lt;/div&gt;
+  &lt;div class="column"&gt;&lt;/div&gt;
+  &lt;div class="column"&gt;&lt;/div&gt;
+  &lt;div class="column"&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- produces a 4 column grid row --&gt;
+</pre>
+    
+    <h3 class="sg">Alignment <span class="tag css"></span></h3>
+    <p class="sg">By placing a class on a column div you can set the alignment behavior to right or center. cell have an alignment left as default.</p>
+
+    <div class="auto-grid for-show">
+      <div class="column">
+        <button class="clear">Left</button>
+      </div>
+      <div class="column center">
+        <button class="clear">center</button>
+      </div>
+      <div class="column right">
+        <button class="clear">Right</button>
+      </div>
+    </div>
+
+<pre class="sg">
+&lt;div class="auto-grid"&gt;
+  &lt;div class="column"&gt;
+    &lt;button class="clear"&gt;Left&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="column center"&gt;
+    &lt;button class="clear"&gt;Center&lt;/button&gt;
+  &lt;/div&gt;
+  &lt;div class="column right"&gt;
+    &lt;button class="clear"&gt;Right&lt;/button&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    
+    <h3 class="sg">Vertical Center <span class="tag css"></span></h3>
+    <p class="sg">In some cases you might want an element to be vertically centered. You can achieve this by applying class <code>vertical-center</code> to the element. For this class to work, the height of the parent must be set.</p>
+
+    <div class="full for-show">
+      <p class="vertical-center">This is vertically centered</p>
+    </div>
+
+<pre class="sg">
+&lt;div class="full"&gt; &lt;!-- height is set to 200px --&gt;
+  &lt;p class="vertical-center"&gt;This is vertically centered&lt;/p&gt;
+&lt;/div&gt;
+</pre>
+
+  </div>
+
+  <script type="text/javascript" src="./bundle/ha-internal.js"></script>
+  <script>
+    include( dropdown(), checkboxRadioInput() );
+  </script>
+  
+</body>
+</html>

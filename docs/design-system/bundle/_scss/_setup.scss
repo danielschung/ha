@@ -1,0 +1,282 @@
+//setup for style guide (healthalliance.org/design-system)
+$container-sidepadding:40px;
+$sidenav-width:170px;
+$content-short-width:733px;
+
+body.ds > * { //keeps all child in body within padded container
+  margin:0;
+  padding:0 $container-sidepadding;
+}
+
+html {
+  font-size:16px; //sets relative size of all em
+}
+
+//style guide typograpy (sg)
+@import 'typography';
+@import 'colors';
+h1.sg, h2.sh, h3.sg, p.sg, p.sg-large, code.sg, pre.sg {
+  max-width:$content-short-width;
+}
+h1.sg {
+  @extend .title;
+  color:$gray-80;
+  margin:26.8px 0;
+}
+h2.sg { // -- style guide / Large 1
+  @extend h2;
+  color:$gray-80;
+  font-family:$medium;
+  font-size:37px;
+  margin:28.22px 0;
+}
+//note: the first subheader of the page receives a h3.sg, the rest receive an h2.sg
+h3.sg { // -- style guide / Large 2
+  @extend h3;
+  color:$gray-70;
+  font-family:$semibold;
+  font-size:21px;
+  line-height:25px;
+  margin:34px 0 30px 0;
+}
+h4.sg {
+  @extend h4;
+  color:$gray-70;
+  font-size:19px;
+  margin:25.27px 0 20px 0;
+}
+p.sg { // -- style guide / Style 1
+  color:$gray-60;
+  font-size:16px;
+  letter-spacing:-0.01em;
+  margin-bottom:30px;
+}
+p.sg-large { // -- style guide / Style 3
+  @extend .large;
+  color:$gray-60;
+  font-family:$regular;
+  letter-spacing:-0.01em;
+}
+code.sg { //used inline
+  background-color:$gray-20;
+  border-radius:4px;
+  color:$gray-60;
+  font-family:monospace;
+  font-size:16px;
+  line-height:24px;
+  padding:0 7px;
+}
+pre.sg { //used as code block
+  background-color:$gray-10;
+  border-radius:4px;
+  color:$gray-60;
+  font-family:monospace;
+  font-size:15px;
+  line-height:24px;
+  margin-top:20px;
+  padding:7px 12px;
+}
+
+body.ds {
+  margin:0;
+  nav {
+    background-color:$white;
+    box-shadow:inset 0px -1px 0px rgba(0, 0, 0, 0.08);
+    height:72px;
+    position:fixed;
+    width:100vw;
+    z-index:100;
+  }
+  div.sidenav {
+    box-shadow:inset -1px 0px 0px rgba(0, 0, 0, 0.08);
+    height:calc(100vh - 72px);
+    margin-top:72px;
+    padding:63px 0 0 0;
+    position:fixed;
+    width:$sidenav-width + ($container-sidepadding * 2);
+    div.instance {
+      font-family:$medium;  
+      padding:15px 0 15px $container-sidepadding;
+      @extend .hover;
+      a {
+        color:$gray-90;
+        padding:2px 0 2px 40px;
+        text-decoration:none;
+      }
+    }
+    div.current {
+      a {
+        border-left:2px solid $primary-50;
+        color:$primary-50;
+      }
+    }
+    div.instance:hover {
+      background-color:$gray-10;
+      box-shadow:inset -1px 0px 0px rgba(0, 0, 0, 0.08);
+    }
+  }
+  @mixin main {
+    $sidenav-width: $sidenav-width + ($container-sidepadding * 2);
+    margin-left:$sidenav-width;
+    padding-top:120px;
+    padding-bottom:120px;
+  }
+  div.main {
+    @include main;
+    .short-width {
+      max-width:$content-short-width;
+    }
+    div.line {
+      border-bottom:1px solid $gray-20;
+      margin:30px 0 70px 0;
+    }
+  }
+  footer {
+    background-color:$gray-10;
+    height:300px;
+    @include main;
+  }
+  div.color-container {
+    padding:20px 0;
+  }
+  div.component {
+    border-radius:4px;
+    display:inline-block;
+    margin-right:4%;
+    div.instance {
+      padding:15px 14px;
+      p {
+        font-size:14px;
+        margin:0;
+      }
+    }
+    div.instance.first {
+      border-radius:4px 4px 0 0;
+    }
+    div.instance.last {
+      border-radius:0 0 4px 4px;
+    }
+  }
+  div.component.small {
+    width:260px;
+  }
+  div.type-container.half {
+    max-width:43%;
+    margin-right:7%;
+  }
+  div.wrapper.typography {
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    div.type-container:nth-of-type(2) {
+      max-width:524px;
+    }
+    div.font-display {
+      border:1px solid $gray-30;
+      border-radius:2px;
+      padding:29px 83px 40px 59px;
+      max-width:255px;
+      margin-top:30px;
+      p.font-display {
+        font-family:$regular;
+        font-size:59px;
+        font-weight:500;
+        margin:50px 0 30px 0;
+      }
+      p.font-display-sub {
+        font-family:$regular;
+        font-size:22;
+        font-weight:500;
+        line-height:22px;
+      }
+      div.text-container.left {
+        float:left;
+        margin-right:67px;
+      }
+      div.text-container.right {
+        float:right;
+        margin-right:10px;
+        p {
+          margin-bottom:16px;
+        }
+        p.regular { font-family:$regular; }
+        p.medium { font-family:$medium; }
+        p.semibold { font-family:$semibold; }
+        p.bold { font-family:$bold; }
+      }
+    }
+  }
+  div.vector { //used on typography page
+    align-items:center;
+    border-right:1px solid $gray-20;
+    display:flex;
+    justify-content:space-between;
+    padding:0;
+    margin-bottom:43px;
+    p.label,
+    span.label {
+      position:relative;
+      left:20%;
+      width:70px;
+    }
+  }
+  button.view-dms {
+    margin-top:30px;
+  }
+  input[type="checkbox"] ~ div.checkbox::after {
+    top:2px;
+  }
+  span.tag {
+    border-radius:4px;
+    color:$white;
+    display:inline-block;
+    font-family:$medium;
+    font-size:11px;
+    line-height:20px;
+    margin:0 5px;
+    text-align:center;
+    padding-top:2px;
+    position:relative;
+    top:-3px;
+    width:30px;
+  }
+  span.tag.css {
+    border:1px solid $success-20;
+    color:$success-20;
+  }
+  span.tag.css::after {
+    content:"CSS";
+  }
+  span.tag.js {
+    border:1px solid $warning-30;
+    color:$warning-30;
+  }
+  span.tag.js::after {
+    content:"JS";
+  }
+  div.auto-grid.for-show {
+    padding:7px 0;
+    background-color:$failure-10;
+    div.column {
+      background-color:$primary-10;
+    }
+  }
+  div.full.for-show,
+  div.limit.for-show {
+    background-color:$primary-10;
+    height:200px;
+  }
+  div.full.for-show-red {
+    background-color:$failure-10;
+  }
+}
+
+@media only screen and (max-width:1220px) {
+  body.ds div.wrapper.typography {
+    flex-direction:column;
+  }
+  body.ds div.type-container.half {
+    min-width:100%;
+    margin-bottom:40px;
+  }
+}

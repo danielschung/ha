@@ -1,0 +1,48 @@
+//logos
+div.ha-logo {
+  background-repeat:none;
+  height:40px;
+  width:144.2px;
+  @extend .vertical-center;
+}
+div.ha-logo.whole {
+  background-image:url('./icons/ha-logo.png');
+  background-size:100%;
+}
+div.ha-symbol {
+  background-repeat:none;
+  background-image:url('./icons/ha-symbol-white.svg');
+  height:38px;
+  width:38px;
+  @extend .vertical-center;
+}
+div.ha-symbol.color {
+  background-image:url('./icons/ha-symbol.png');
+  background-size:100%;
+}
+
+div.arrow-right {
+  content:url("./icons/arrow-right.svg");
+  display:inline-block;
+  position:relative;
+  top:1px;
+}
+
+div.filter-icon {
+  background-image:url("./icons/filter-icon.svg");
+  display:inline-block;
+}
+
+button.favorite div.star {
+  background-image:url("./icons/star-gray.svg");
+  background-repeat:no-repeat;
+  display:inline-block;
+  padding-right:7px;
+  position:relative;
+  top:1px;
+  height:15px;
+  width:15px;
+}
+button.favorite.active div.star {
+  background-image:url("./icons/star-gold.svg");
+}

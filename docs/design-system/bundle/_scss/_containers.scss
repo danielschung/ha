@@ -1,0 +1,32 @@
+//page containers
+div.full {
+  width:100%;
+}
+
+div.limit {
+  margin:0 auto;
+  max-width:1200px;
+}
+
+//divider container
+div.divider {
+  border-bottom:1px solid $gray-20;
+  padding:22px 10px;
+}
+
+//closed container
+div.closed {
+  background-color:$white;
+  border:1px solid $gray-20;
+  box-sizing:border-box;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
+  border-radius:5px;
+  // box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.08);
+  padding:28px 32px;
+  width:100%;
+}
+
+div.colored {
+  border-radius:4px;
+  padding:22px 20px;
+}

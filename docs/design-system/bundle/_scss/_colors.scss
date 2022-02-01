@@ -1,0 +1,118 @@
+//purples
+$primary-500:#202067;
+$primary-50:#2E2D85;
+$primary-40:#4D4CAC;
+$primary-30:#8180E3;
+$primary-20:#C0C6FA;
+$primary-10:#EBEDFF;
+
+//reds
+$failure-50:#85272C;
+$failure-40:#B12535;
+$failure-30:#E07481;
+$failure-20:#FEC5CB;
+$failure-10:#FFEFF1;
+
+//yellows
+$warning-50:#66491E;
+$warning-40:#A87B23;
+$warning-30:#F0BB44;
+$warning-20:#F3E4C2;
+$warning-10:#FFF8EC;
+
+//greens
+$success-50:#2F5526;
+$success-40:#43702E;
+$success-30:#67934B;
+$success-20:#93C980;
+$success-10:#EAFFEA;
+
+//grayscale
+$gray-100:#131619;
+$gray-90:#22272A;
+$gray-80:#353A3F;
+$gray-70:#4E5358;
+$gray-60:#737980;
+$gray-50:#969CA5;
+$gray-40:#C1C7CF;
+$gray-30:#D6DBE4;
+$gray-20:#EAECEF;
+$gray-10:#F9FAFB;
+$white:#FFFFFF;
+
+//system
+$success:#69CA5A;
+$fail:#DA2727;
+$information:#60B2FF;
+
+//color can set as class in text styles
+h1.purple-50, h2.purple-50, h3.purple-50, h4.purple-50, h5.purple-50, h6.purple-50, p.purple-50, a.purple-50, i.purple-50 { color:$primary-50 !important; }
+h1.purple-40, h2.purple-40, h3.purple-40, h4.purple-40, h5.purple-40, h6.purple-40, p.purple-40, a.purple-40, i.purple-40 { color:$primary-40 !important; }
+h1.purple-30, h2.purple-30, h3.purple-30, h4.purple-30, h5.purple-30, h6.purple-30, p.purple-30, a.purple-30, i.purple-30 { color:$primary-30 !important; }
+h1.purple-20, h2.purple-20, h3.purple-20, h4.purple-20, h5.purple-20, h6.purple-20, p.purple-20, a.purple-20, i.purple-20 { color:$primary-20 !important; }
+h1.purple-10, h2.purple-10, h3.purple-10, h4.purple-10, h5.purple-10, h6.purple-10, p.purple-10, a.purple-10, i.purple-10 { color:$primary-10 !important; }
+h1.red-50, h2.red-50, h3.red-50, h4.red-50, h5.red-50, h6.red-50, p.red-50, a.red-50, i.red-50 { color:$failure-50 !important; }
+h1.red-40, h2.red-40, h3.red-40, h4.red-40, h5.red-40, h6.red-40, p.red-40, a.red-40, i.red-40 { color:$failure-40 !important; }
+h1.red-30, h2.red-30, h3.red-30, h4.red-30, h5.red-30, h6.red-30, p.red-30, a.red-30, i.red-30 { color:$failure-30 !important; }
+h1.red-20, h2.red-20, h3.red-20, h4.red-20, h5.red-20, h6.red-20, p.red-20, a.red-20, i.red-20 { color:$failure-20 !important; }
+h1.red-10, h2.red-10, h3.red-10, h4.red-10, h5.red-10, h6.red-10, p.red-10, a.red-10, i.red-10 { color:$failure-10 !important; }
+h1.yellow-50, h2.yellow-50, h3.yellow-50, h4.yellow-50, h5.yellow-50, h6.yellow-50, p.yellow-50, a.yellow-50, i.yellow-50 { color:$warning-50 !important; }
+h1.yellow-40, h2.yellow-40, h3.yellow-40, h4.yellow-40, h5.yellow-40, h6.yellow-40, p.yellow-40, a.yellow-40, i.yellow-40 { color:$warning-40 !important; }
+h1.yellow-30, h2.yellow-30, h3.yellow-30, h4.yellow-30, h5.yellow-30, h6.yellow-30, p.yellow-30, a.yellow-30, i.yellow-30 { color:$warning-30 !important; }
+h1.yellow-20, h2.yellow-20, h3.yellow-20, h4.yellow-20, h5.yellow-20, h6.yellow-20, p.yellow-20, a.yellow-20, i.yellow-20 { color:$warning-20 !important; }
+h1.yellow-10, h2.yellow-10, h3.yellow-10, h4.yellow-10, h5.yellow-10, h6.yellow-10, p.yellow-10, a.yellow-10, i.yellow-10 { color:$warning-10 !important; }
+h1.green-50, h2.green-50, h3.green-50, h4.green-50, h5.green-50, h6.green-50, p.green-50, a.green-50, i.green-50 { color:$success-50 !important; }
+h1.green-40, h2.green-40, h3.green-40, h4.green-40, h5.green-40, h6.green-40, p.green-40, a.green-40, i.green-40 { color:$success-40 !important; }
+h1.green-30, h2.green-30, h3.green-30, h4.green-30, h5.green-30, h6.green-30, p.green-30, a.green-30, i.green-30 { color:$success-30 !important; }
+h1.green-20, h2.green-20, h3.green-20, h4.green-20, h5.green-20, h6.green-20, p.green-20, a.green-20, i.green-20 { color:$success-20 !important; }
+h1.green-10, h2.green-10, h3.green-10, h4.green-10, h5.green-10, h6.green-10, p.green-10, a.green-10, i.green-10 { color:$success-10 !important; }
+h1.gray-100, h2.gray-100, h3.gray-100, h4.gray-100, h5.gray-100, h6.gray-100, p.gray-100, a.gray-100, i.gray-100 { color:$gray-100 !important; }
+h1.gray-90, h2.gray-90, h3.gray-90, h4.gray-90, h5.gray-90, h6.gray-90, p.gray-90, a.gray-90, i.gray-90 { color:$gray-90 !important; }
+h1.gray-80, h2.gray-80, h3.gray-80, h4.gray-80, h5.gray-80, h6.gray-80, p.gray-80, a.gray-80, i.gray-80 { color:$gray-80 !important; }
+h1.gray-70, h2.gray-70, h3.gray-70, h4.gray-70, h5.gray-70, h6.gray-70, p.gray-70, a.gray-70, i.gray-70 { color:$gray-70 !important; }
+h1.gray-60, h2.gray-60, h3.gray-60, h4.gray-60, h5.gray-60, h6.gray-60, p.gray-60, a.gray-60, i.gray-60 { color:$gray-60 !important; }
+h1.gray-50, h2.gray-50, h3.gray-50, h4.gray-50, h5.gray-50, h6.gray-50, p.gray-50, a.gray-50, i.gray-50 { color:$gray-50 !important; }
+h1.gray-40, h2.gray-40, h3.gray-40, h4.gray-40, h5.gray-40, h6.gray-40, p.gray-40, a.gray-40, i.gray-40 { color:$gray-40 !important; }
+h1.gray-30, h2.gray-30, h3.gray-30, h4.gray-30, h5.gray-30, h6.gray-30, p.gray-30, a.gray-30, i.gray-30 { color:$gray-30 !important; }
+h1.gray-20, h2.gray-20, h3.gray-20, h4.gray-20, h5.gray-20, h6.gray-20, p.gray-20, a.gray-20, i.gray-20 { color:$gray-20 !important; }
+h1.gray-10, h2.gray-10, h3.gray-10, h4.gray-10, h5.gray-10, h6.gray-10, p.gray-10, a.gray-10, i.gray-10 { color:$gray-10 !important; }
+h1.white, h2.white, h3.white, h4.white, h5.white, h6.white, p.white, a.white, i.white { color:$white; }
+h1.success, h2.success, h3.success, h4.success, h5.success, h6.success, p.success, a.success, i.success { color:$success; }
+h1.fail, h2.fail, h3.fail, h4.fail, h5.fail, h6.fail, p.fail, a.fail, i.fail { color:$fail; }
+h1.information, h2.information, h3.information, h4.information, h5.information, h6.information, p.information, a.information, i.information { color:$information; }
+
+//color can be set as background-color on divs
+div.purple-50 { background-color:$primary-50 !important; @extend .colored; }
+div.purple-40 { background-color:$primary-40 !important; @extend .colored; }
+div.purple-30 { background-color:$primary-30 !important; @extend .colored; }
+div.purple-20 { background-color:$primary-20 !important; @extend .colored; }
+div.purple-10 { background-color:$primary-10 !important; @extend .colored; }
+div.red-50 { background-color:$failure-50 !important; @extend .colored; }
+div.red-40 { background-color:$failure-40 !important; @extend .colored; }
+div.red-30 { background-color:$failure-30 !important; @extend .colored; }
+div.red-20 { background-color:$failure-20 !important; @extend .colored; }
+div.red-10 { background-color:$failure-10 !important; @extend .colored; }
+div.yellow-50 { background-color:$warning-50 !important; @extend .colored; }
+div.yellow-40 { background-color:$warning-40 !important; @extend .colored; }
+div.yellow-30 { background-color:$warning-30 !important; @extend .colored; }
+div.yellow-20 { background-color:$warning-20 !important; @extend .colored; }
+div.yellow-10 { background-color:$warning-10 !important; @extend .colored; }
+div.green-50 { background-color:$success-50 !important; @extend .colored; }
+div.green-40 { background-color:$success-40 !important; @extend .colored; }
+div.green-30 { background-color:$success-30 !important; @extend .colored; }
+div.green-20 { background-color:$success-20 !important; @extend .colored; }
+div.green-10 { background-color:$success-10 !important; @extend .colored; }
+div.gray-100 { background-color:$gray-100 !important; @extend .colored; }
+div.gray-90 { background-color:$gray-90 !important; @extend .colored; }
+div.gray-80 { background-color:$gray-80 !important; @extend .colored; }
+div.gray-70 { background-color:$gray-70 !important; @extend .colored; }
+div.gray-60 { background-color:$gray-60 !important; @extend .colored; }
+div.gray-50 { background-color:$gray-50 !important; @extend .colored; }
+div.gray-40 { background-color:$gray-40 !important; @extend .colored; }
+div.gray-30 { background-color:$gray-30 !important; @extend .colored; }
+div.gray-20 { background-color:$gray-20 !important; @extend .colored; }
+div.gray-10 { background-color:$gray-10 !important; @extend .colored; }
+div.white { background-color:$white !important; @extend .colored; }
+div.success { background-color:$success !important; @extend .colored; }
+div.fail { background-color:$fail !important; @extend .colored; }
+div.information { background-color:$information !important; @extend .colored; }

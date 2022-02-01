@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Design System | Dropdowns</title>
+  <link rel="stylesheet" type="text/css" href="./bundle/ha-internal.css">
+</head>
+<body class="ds">
+  <nav>
+    <div class="ha-logo whole"></div>
+  </nav>
+  <div class="sidenav">
+    <div class="instance">
+      <a href="./index.html">Overview</a>
+    </div>
+    <div class="instance">
+      <a href="./accordions.html">Accordions</a>
+    </div>
+    <div class="instance">
+      <a href="./buttons.html">Buttons</a>
+    </div>
+    <div class="instance">
+      <a href="./colors.html">Colors</a>
+    </div>
+    <div class="instance">
+      <a href="./containers.html">Containers</a>
+    </div>
+    <div class="instance current">
+      <a href="./dropdowns.html">Dropdowns</a>
+    </div>
+    <div class="instance">
+      <a href="./inputs.html">Inputs</a>
+    </div>
+    <div class="instance">
+      <a href="./layouts.html">Layouts</a>
+    </div>
+    <div class="instance">
+      <a href="./typography.html">Typography</a>
+    </div>
+    <div class="instance">
+      <a href="./dms-guide.html">DMS Style Guide</a>
+    </div>
+    <div class="instance">
+      <a href="./portal-guide.html">Portal Guide</a>
+    </div>
+  </div>
+  <div class="main">
+    <h1 class="sg">Dropdowns</h1>
+    <p class="sg-large">Select elements cannot be styled, but this component uses a workaround. The select itself is hidden, and styled HTML is injected into an empty div that comes after the select. Placing a class "select" calls the component. Inside the "select" div there is a label, the hidden select element, and the empty div. Even though the select is hidden, the empty div reads all the metadata built into the select, so the markup would contain all the options and values as usual.</p>
+    <h4 class="sg">Initializing all dropdowns</h4>
+<pre class="sg">
+&lt;script&gt;
+  include(dropdown());
+&lt;/script&gt;
+</pre>
+    <div class="line"></div>
+    
+    <h3 class="sg">Normal Select <span class="tag css"></span><span class="tag js"></span></h3>
+    <div class="select">
+      <label for="dropdown">Label</label>
+      <select id="dropdown">
+        <option value="">Choose</option>
+        <option value="option 1">Option 1</option>
+        <option value="option 2">Option 2</option>
+        <option value="option 3">Option 3</option>
+        
+      </select>
+      <div></div>
+    </div>
+    <div class="select">
+      <label for="dropdown">Label</label>
+      <select id="dropdown" disabled>
+        <option value="" selected>Disabled</option>
+        <option value="option 1">Option 1</option>
+        <option value="option 2">Option 2</option>
+        <option value="option 3">Option 3</option>
+      </select>
+      <div></div>
+    </div>
+<pre class="sg">
+&lt;!-- children order matters --&gt;
+&lt;div class="select"&gt;
+  &lt;label for="dropdown"&gt;Label&lt;/label&gt;
+  &lt;select id="dropdown"&gt;
+    &lt;option value="" selected&gt;Choose&lt;/option&gt;
+    &lt;option value="option 1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="option 2"&gt;Option 2&lt;/option&gt;
+    &lt;option value="option 3"&gt;Option 3&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;div&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+    <h3 class="sg">Small Select <span class="tag css"></span><span class="tag js"></span></h3>
+    <div class="select small">
+      <label for="small-dropdown">Label</label>
+      <select id="small-dropdown">
+        <option value="" selected>Choose</option>
+        <option value="option 1">Option 1</option>
+        <option value="option 2">Option 2</option>
+        <option value="option 3">Option 3</option>
+      </select>
+      <div></div>
+    </div>
+    <div class="select small">
+      <label for="small-dropdown">Label</label>
+      <select id="small-dropdown" disabled>
+        <option value="" selected>Choose</option>
+        <option value="option 1">Option 1</option>
+        <option value="option 2">Option 2</option>
+        <option value="option 3">Option 3</option>
+      </select>
+      <div></div>
+    </div>
+<pre class="sg">
+&lt;!-- children order matters --&gt;
+&lt;div class="select small"&gt;
+  &lt;label for="small-dropdown"&gt;Label&lt;/label&gt;
+  &lt;select id="small-dropdown"&gt;
+    &lt;option value="" selected&gt;Choose&lt;/option&gt;
+    &lt;option value="option 1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="option 2"&gt;Option 2&lt;/option&gt;
+    &lt;option value="option 3"&gt;Option 3&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;div&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+  <h3 class="sg">Simple Select <span class="tag css"></span></h3>
+  <p class="sg">If you are having trouble implementing the full component above, here is a simple but less styled versions for use.</p>
+  <div class="simple-select">
+    <select id="simple-select" class="simple">
+      <option value="" selected>Choose</option>
+      <option value="option 1">Option 1</option>
+      <option value="option 2">Option 2</option>
+      <option value="option 3">Option 3</option>
+    </select>
+    <span class="icon-chevron-down"></span>
+  </div>
+  <div class="simple-select">
+    <select id="simple-select" class="simple" disabled>
+      <option value="" selected>Choose</option>
+      <option value="option 1">Option 1</option>
+      <option value="option 2">Option 2</option>
+      <option value="option 3">Option 3</option>
+    </select>
+    <span class="icon-chevron-down"></span>
+  </div>
+<pre class="sg">
+&lt;div class="simple-select"&gt;
+  &lt;select id="simple-select" class="simple"&gt;
+    &lt;option value="" selected&gt;Choose&lt;/option&gt;
+    &lt;option value="option 1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="option 2"&gt;Option 2&lt;/option&gt;
+    &lt;option value="option 3"&gt;Option 3&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;span class="icon-chevron-down"&gt;&lt;/span&gt;
+&lt;/div&gt;
+</pre>
+
+    <h4 class="sg">Simple Small Select <span class="tag css"></span></h4>
+    <div class="simple-select">
+      <select id="simple-select-small" class="simple small">
+        <option value="" selected>Choose</option>
+        <option value="option 1">Option 1</option>
+        <option value="option 2">Option 2</option>
+        <option value="option 3">Option 3</option>
+      </select>
+      <span class="icon-chevron-down"></span>
+    </div>
+<pre class="sg">
+&lt;div class="simple-select"&gt;
+  &lt;select id="simple-select" class="simple small"&gt;
+    &lt;option value="" selected&gt;Choose&lt;/option&gt;
+    &lt;option value="option 1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="option 2"&gt;Option 2&lt;/option&gt;
+    &lt;option value="option 3"&gt;Option 3&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;span class="icon-chevron-down"&gt;&lt;/span&gt;
+&lt;/div&gt;
+</pre>
+  <div class="line"></div>
+
+  <h2 class="sg">Multiple Select <span class="tag css"></span><span class="tag js"></span></h2>
+  <p class="sg">Multiple select allows multiple values to be accepted in a dropdown.</p>
+  <div class="select multiple">
+    <label for="multiple-dropdown">Label</label>
+    <select id="multiple-dropdown" multiple>
+      <option value>Choose all that apply</option>
+      <option value="item 1">Item 1</option>
+      <option value="item 2">Item 2</option>
+      <option value="item 3">Item 3</option>
+    </select>
+    <div></div>
+  </div>
+<pre class="sg">
+&lt;!-- children order matters --&gt;
+&lt;div class="select multiple"&gt;
+  &lt;label for="multiple-dropdown"&gt;Label&lt;/label&gt;
+  &lt;select id="multiple-dropdown" multiple&gt;
+    &lt;option value="" selected&gt;Choose&lt;/option&gt;
+    &lt;option value="option 1"&gt;Option 1&lt;/option&gt;
+    &lt;option value="option 2"&gt;Option 2&lt;/option&gt;
+    &lt;option value="option 3"&gt;Option 3&lt;/option&gt;
+  &lt;/select&gt;
+  &lt;div&gt;&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+  <div class="line"></div>
+
+  <h2 class="sg">Header Select <span class="tag css"></span></h2>
+  <p class="sg">This is a special select dropdown that is found in the header of the Document Management System. It does not require JS, so it doesn't need to be initialized. The component has a visible container that reveals a hidden dropdown on hover.</p>
+
+<pre class="sg">
+&lt;div class="header-select"&gt;
+  &lt;div class="container"&gt;
+    &lt;div class="ha-symbol color"&gt;&lt;/div&gt;
+    &lt;h3&gt;Document Management System&lt;/h3&gt;
+    &lt;div class="line"&gt;&lt;/div&gt;
+  &lt;/div&gt;
+  &lt;div class="hidden-container"&gt;
+    &lt;p class="caption"&gt;See Broker Portal View&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+    
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="./bundle/ha-internal.js"></script>
+  <script>
+    include( dropdown(), checkboxRadioInput() );
+  </script>
+
+</body>
+</html>

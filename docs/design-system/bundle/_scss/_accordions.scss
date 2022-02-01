@@ -1,0 +1,78 @@
+//divider accordion
+div.accordion.divider {
+  @extend .divider;
+  position:relative;
+
+  p {
+    color:$gray-90;
+    font-size:17px;
+    line-height:20px;
+  }
+}
+
+div.accordion.divider:hover {
+  background-color:$gray-10;
+  @extend .hover;
+}
+
+div.accordion.divider:active {
+  background-color:$gray-20;
+}
+
+div.accordion.divider.active:active {
+  background-color:$gray-10;
+}
+
+div.accordion::after {
+  content:url(../images/icons/plus.svg);
+  position:absolute;
+  right:24px;
+  top:20px;
+}
+
+div.accordion div.hidden {
+  max-height:0;
+  overflow-y:hidden;
+  position:relative;
+  top:22px;
+  transition:max-height 0.05s ease-out;
+}
+
+div.accordion.active div.hidden {
+  max-height:1000px;
+  padding-bottom:22px;
+  transition:max-height 0.15s ease-in;
+}
+
+div.accordion.active::after {
+  content:url(../images/icons/minus.svg);
+}
+
+//colored accordion
+div.accordion.colored {
+  @extend .colored;
+  background-color:$gray-10;
+  margin-bottom:22px;
+  position:relative;
+
+  p {
+    color:$gray-90;
+    font-size:17px;
+    line-height:20px;
+  }
+}
+
+div.accordion.colored:hover {
+  background-color:$gray-20;
+  @extend .hover;
+}
+
+div.accordion.colored:active {
+  background-color:$gray-30;
+}
+
+
+
+
+
+

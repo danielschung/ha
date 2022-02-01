@@ -1,0 +1,74 @@
+body.fr {
+
+  padding-bottom:100px;
+
+  div.limit {
+    max-width:1400px;
+  }
+
+  nav {
+    height:72px;
+
+    div.ha-symbol {
+      display:inline-block;
+    }
+
+    h2 {
+      border-left: 1px solid rgba(255, 255, 255, 0.24);
+      color:$white;
+      font-size:20px;
+      line-height:24px;
+      display:inline-block;
+      padding:5px 14px;
+      margin:0 0 0 14px;
+      position:relative;
+      top:5px;
+    }
+  }
+
+  div.auto-grid.header {
+    margin-top:45px;
+  }
+
+  div.auto-grid.apply-filter {
+    button {
+      margin-top:35px;
+    }
+  }
+
+  div.closed.filters {
+    margin-top:32px;
+
+    div.auto-grid.filters {
+      margin-top:27px;
+    }
+
+    button.text.clear-filters {
+      padding-top:0;
+      margin-right:20px;
+    }
+  }
+
+  div.select {
+    width:100%;
+  }
+
+  div.auto-grid.breadcrumbs {
+    margin-top:39px;
+  }
+
+  h2.view {
+    font-size:30px;
+    margin:56px 0 16px 0;
+  }
+
+  div.divider {
+    padding:22px 0;
+
+    p {
+      color:$gray-90;
+      display:inline-block;
+    }
+  }
+
+}

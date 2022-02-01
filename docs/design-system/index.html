@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Design System</title>
+  <link rel="stylesheet" type="text/css" href="./bundle/ha-internal.css">
+</head>
+<body class="ds">
+  <nav>
+    <div class="ha-logo whole"></div>
+  </nav>
+  <div class="sidenav">
+    <div class="instance current">
+      <a href="./index.html">Overview</a>
+    </div>
+    <div class="instance">
+      <a href="./accordions.html">Accordions</a>
+    </div>
+    <div class="instance">
+      <a href="./buttons.html">Buttons</a>
+    </div>
+    <div class="instance">
+      <a href="./colors.html">Colors</a>
+    </div>
+    <div class="instance">
+      <a href="./containers.html">Containers</a>
+    </div>
+    <div class="instance">
+      <a href="./dropdowns.html">Dropdowns</a>
+    </div>
+    <div class="instance">
+      <a href="./inputs.html">Inputs</a>
+    </div>
+    <div class="instance">
+      <a href="./layouts.html">Layouts</a>
+    </div>
+    <div class="instance">
+      <a href="./typography.html">Typography</a>
+    </div>
+    <div class="instance">
+      <a href="./dms-guide.html">DMS Style Guide</a>
+    </div>
+    <div class="instance">
+      <a href="./portal-guide.html">Portal Guide</a>
+    </div>
+  </div>
+  <div class="main">
+    <h1 class="sg">Design System</h1>
+    <p class="sg">This is Health Alliance's design system for digital products to maintain a consistent brand and experience. This design-system mainly addresses internal products for now, but hopefully can eventually encompass all our products. It will allow designers to tightly establish brand guidelines and allow developers to deploy styles more quickly and accurately in development.</p>
+    <h3 class="sg">Getting Started</h3>
+    <p class="sg">Our design system requires the use of one <span class="tag css"></span> file and one <span class="tag js"></span> file. Both resources are hosted on the Content-Haorg repository. Linking these up gives access to all the styles in this design system.</p>
+    <h4 class="sg">CSS</h4>
+<pre class="sg">
+&lt;link rel="stylesheet" type="text/css" href="./bundle/ha-internal.css"&gt;</pre>
+
+    <h4 class="sg">JS</h4>
+<pre class="sg">
+&lt;script type="text/javascript" src="/js/ha-internal.js"&gt;&lt;/script&gt;
+</pre>
+
+    <h4 class="sg">Initialize Components</h4>
+    <p class="sg">Components marked <span class="tag js"></span> need to be initalized to work. To do this, simply call the function <code>include()</code> on the page and pass the component function. You can pass multiple component functions by separating them with a comma. Each component's function will be listed in its documention.</p>
+<pre class="sg">
+&lt;script&gt;
+  include( circleButton(), optionsButton(), filterButton() );
+&lt;/script&gt;
+</pre>
+
+  </div>
+
+</body>
+</html>

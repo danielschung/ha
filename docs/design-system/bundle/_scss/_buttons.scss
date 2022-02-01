@@ -1,0 +1,380 @@
+button {
+  background-color:$white;
+  border-radius:4px;
+  cursor:pointer;
+  display:inline-block;
+  font-family:$regular;
+  font-size:15px;
+  line-height:20px;
+  outline:none;
+  padding:14px 30px;
+  @extend .hover;
+}
+
+//purple button
+button.purple {
+  background-color:$primary-40;
+  border:1px solid $primary-40;
+  color:$white;
+}
+button.purple:hover {
+  background-color:$primary-50;
+  border:1px solid $primary-50;
+}
+button.purple:active{
+  background-color:$primary-500;
+  border:1px solid $primary-500;
+}
+button.purple:disabled {
+  background-color:$gray-20;
+  border:1px solid $gray-20;
+  color:$gray-50;
+}
+
+//clear button
+button.clear {
+  background-color:$white;
+  border:2px solid $primary-40;
+  color:$primary-40;
+}
+button.clear:hover {
+  background-color:$primary-40;
+  color:$white;
+}
+button.clear:active {
+  background-color:$primary-500;
+  border:2px solid $primary-500;
+}
+button.clear:disabled {
+  background-color:$white;
+  border:2px solid $gray-30;
+  color:$gray-40;
+}
+//small buttons
+button.small {
+  background-color:$white;
+  border:1px solid $gray-30;
+  font-size:14px;
+  padding:9px 20px;
+}
+button.small:hover {
+  color:$primary-40;
+}
+button.small:disabled {
+  border:1px solid $gray-30;
+  color:$gray-40;
+}
+button.small:active {
+  color: $primary-500;
+}
+
+//purple.small
+button.purple.small {
+  background-color:$primary-40;
+  border:1px solid $primary-40;
+  color:$white;
+}
+button.purple:hover {
+  background-color:$primary-50;
+}
+button.purple:active{
+  background-color:$primary-500;
+  border:1px solid $primary-500;
+}
+button.purple:disabled {
+  background-color:$gray-20;
+  border:1px solid $gray-20;
+  color:$gray-50;
+}
+
+//clear.small
+button.clear.small {
+  border:1px solid $primary-40;
+}
+button.clear.small:hover {
+  color:$white;
+}
+button.clear.small:disabled {
+  border:1px solid $gray-30;
+  color:$gray-40;
+}
+
+//small.success
+button.small.success {
+  border:1px solid $success;
+  color:$success;
+}
+button.small.success::after {
+  content:url('./icons/check-green.svg');
+  padding-left:4px;
+}
+button.small.success:disabled {
+  border:1px solid $gray-30;
+  color:$gray-40;
+}
+button.small.success:disabled::after {
+  content:url('./icons/check-gray.svg');
+}
+
+//round button
+button.round {
+  border-radius:40px;
+}
+
+//text button
+button.text {
+  color:$primary-40;
+  border:none;
+  background-color:none;
+  padding:14px 0;
+  @extend .hover;
+  i {
+    font-size:12px;
+    margin-left:8px;
+  }
+}
+button.text:hover {
+  color:$primary-50;
+}
+button.text:active {
+  color:$primary-500;
+}
+button.text:active i {
+  transform:rotate(0.5turn);
+}
+
+//circle button
+button.circle {
+  background-color:$primary-40;
+  border:none;
+  border-radius:1000px;
+  box-shadow: 0px 3px 6px rgba(54, 53, 145, 0.2);
+  padding:13px;
+  line-height:0;
+  margin-bottom:20px;
+  font-size:24px;
+  @extend .hover;
+  transition:background-color 0.3s, transform 0.5s ease;
+}
+button.circle::after {
+  content:url("./icons/plus.svg");
+}
+button.circle:hover {
+  background-color:$primary-50;
+}
+button.circle:active {
+  background-color:$primary-500;
+}
+button.circle.active {
+  background-color:$gray-30;
+  transform:rotate(45deg);
+}
+button.circle + div {
+  display:none;
+}
+button.circle + div.active {
+  display:inline-block;
+}
+button.circle ~ div.left {
+  float:left;
+  button {
+    margin-right:10px;
+  }
+}
+
+//options button
+button.options {
+  background-image:url("./icons/three-dots.svg");
+  background-repeat:no-repeat;
+  background-size:20px;
+  border:none;
+  display:block;
+  padding:11px;
+}
+button.options + div {
+  background-color:$white;
+  border:1px solid $gray-30;
+  border-radius:4px;
+  display:none;
+  position:absolute;
+  padding:4px 0;
+  min-width:200px;
+  z-index:100;
+  ul {
+    list-style-type:none;
+    padding:0;
+    margin:0;
+    li {
+      color:$gray-90;
+      font-size:15px;
+      padding:10px 14px;
+      margin:0;
+      @extend .hover;
+    }
+    li:hover {
+      background-color:$gray-10;
+    }
+  }
+}
+button.options + div.active {
+  display:block;
+}
+button.options + div ul li.list { //menu inside dropdown
+  + div.menu {
+    background-color:$white;
+    border:1px solid $gray-30;
+    border-radius:4px;
+    display:none;
+    padding:4px 0;
+    position:absolute;
+    left:207px;
+    top:0;
+    min-width:200px;
+  }
+  + div.menu.active {
+    display:block;
+  }
+}
+
+//favorite button
+button.favorite {
+  color:$gray-50;
+  border:none;
+  padding:0;
+  font-size:15px;
+}
+button.favorite.active {
+  color:$warning-30;
+}
+
+//filter button
+div.filter {
+  position:relative;
+  display:inline-block;
+}
+button.filter div.filter-icon {
+  position:relative;
+  margin-right:7px;
+  top:3px;
+  height:18px;
+  width:18px;
+}
+button.filter + div {
+  display:none;
+  background-color:$white;
+  border:1px solid $gray-30;
+  border-radius:4px;
+  padding:24px;
+  position:absolute;
+  right:342px;
+  margin-top:5px;
+  width:470px;
+  height:300px;
+  z-index:10;
+  div.select {
+    div.dropdown {
+      width:100%;
+    }
+  }
+  div.container-left,
+  div.container-right {
+    display:inline-block;
+    position:relative;
+    padding:0;
+    div.select {
+      display:block;
+      margin:0 0 12px 0;
+      div.dropdown {
+        width:188px;
+      }
+    }
+  }
+  div.container-left {
+    margin-right:32px;
+    float:left;
+  }
+  div.container-right {
+    margin:0;
+    float:right;
+  }
+  div.container-bottom {
+    position:absolute;
+    bottom:24px;
+    width:calc(100% - 48px);
+    clear:both;
+    display:block;
+    padding-top:10px;
+    height:50px;
+    div.input {
+      top:20px;
+      label {
+        color:$gray-40;
+      }
+    }
+    button {
+      margin-left:12px;
+    }
+  }
+}
+button.filter + div.active {
+  display:block;
+}
+button.filter.active {
+  color:$primary-30;
+}
+
+//refresh button
+button.refresh {
+  i {
+    margin-right:7px;
+  }
+}
+
+//tabs
+div.tabs {
+  cursor:pointer;
+  div.tab-header {
+    color:$gray-60;
+    display:inline-block;
+    font-family:$medium;
+    line-height:20px;
+    margin-right:28px;
+    padding:14px 0;
+  }
+  div.active {
+    border-bottom:2px solid $primary-30;
+    color:$primary-30;
+  }
+  div.content {
+    border-top:1px solid $gray-30;
+    padding:24px 0;
+  }
+}
+
+//plus and minus buttons
+button.plus,
+button.minus {
+  @extend .purple;
+  background-color:$primary-40;
+  border-sizing:border-box;
+  height:32px;
+  width:32px;
+  padding:0;
+}
+button.minus::before {
+  content: '-';
+  font-size:22px;
+  line-height:12px;
+}
+button.plus::before {
+  content: '+';
+  font-size:22px;
+  line-height:12px;
+}
+
+
+
+
+
+
+

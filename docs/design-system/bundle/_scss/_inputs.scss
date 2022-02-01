@@ -1,0 +1,304 @@
+input:focus {
+  outline:none;
+}
+
+//input
+input {
+  border:1px solid $gray-30;
+  border-radius:4px;
+  box-sizing:content-box;
+  color:$gray-90;
+  font-family:$regular;
+  font-size:16px;
+  padding:15px 17px;
+  @extend .hover;
+}
+input:invalid {
+  border:1px solid $fail;
+}
+input:invalid::placeholder {
+  color:$fail;
+}
+input:invalid:hover {
+  border:1px solid $fail;
+}
+input::placeholder {
+  color:$gray-50;
+  min-width:241px;
+}
+input:hover, {
+  border:1px solid $gray-50;
+}
+input:focus {
+  border:1px solid $gray-50;
+}
+input:disabled {
+  background-color:$gray-10;
+}
+input:disabled::placeholder {
+  color:$gray-40;
+}
+input:disabled:hover {
+  border:1px solid $gray-30;
+}
+div.input {
+  display:inline-block;
+  position:relative;
+}
+label {
+  display:block;
+  font-family:$regular;
+  font-size:14px;
+  line-height:17px;
+  margin-bottom:6px;
+}
+input ~ label {
+  color:$gray-90;
+  float:right;
+  font-size:15px;
+  line-height:23px;
+  margin-right:24px;
+}
+
+//input type file
+input[type="file"] {
+  display:none; //hides file input
+}
+input[type="file"]:disabled + div.file {
+  background-color:$gray-10;
+}
+div.file {
+  border:1px solid $gray-30;
+  border-radius:4px;
+  min-width:350px;
+  margin-bottom:20px;
+  margin-right:24px;
+  height:20px;
+  padding:15px 14px;
+  div.container {
+    height:20px;
+    padding:0;
+    p {
+      color:$gray-50;
+      float:left;
+      font-size:14px;
+      margin:0;
+      @extend .vertical-center;
+    }
+    div { //shows styled input div (injected via ha-internal.js)
+      background-color:$gray-20;
+      border-radius:3px;
+      float:right;
+      @extend .vertical-center;
+      span {
+        color:$gray-70;
+        font-family:$regular;
+        font-size:13px;
+        line-height:24px;
+        padding:2px 8px;
+      }
+    }
+  }
+}
+div.simple-input {
+  display:inline-block;
+}
+input[type="file"].simple { //simple file option
+  display:inline-block;
+  border:1px solid $gray-30;
+  border-radius:4px;
+  color:$gray-50;
+  min-width:350px;
+  padding:15px 14px;
+}
+
+//input type date
+input::-webkit-inner-spin-button { 
+  display: none;
+}
+input::-webkit-datetime-edit-text { color:$gray-50;}
+input::-webkit-datetime-edit-month-field { color:$gray-50; }
+input::-webkit-datetime-edit-day-field { color:$gray-50; }
+input::-webkit-datetime-edit-year-field { color:$gray-50; }
+
+//input type checkbox and radio
+input[type="checkbox"],
+input[type="radio"] {
+  display:none;
+}
+input[type="checkbox"] ~ div.checkbox,
+input[type="radio"] ~ div.radio {
+  border:2px solid $gray-40;
+  border-radius:3px;
+  cursor:pointer;
+  display:inline-block;
+  margin-right:12px;
+  position:relative;
+  padding:3px;
+  height:10px;
+  width:10px;
+}
+input[type="checkbox"]:checked ~ div.checkbox,
+input[type="radio"]:checked ~ div.radio {
+  background-color:$primary-30;
+  border:2px solid $primary-30;
+}
+input[type="checkbox"] ~ div.checkbox::after {
+  content:url("./icons/check.svg");
+  margin:0;
+  padding:0;
+  position:absolute;
+  top:-2px;
+  height:19px;
+  display:block;
+  left:2px;
+  opacity:0;
+}
+input[type="radio"] ~ div.radio::after {
+  content:url("./icons/dot.svg");
+  position:relative;
+  top:2px;
+  left:2px;
+  opacity:0;
+}
+input[type="checkbox"]:checked ~ div.checkbox::after,
+input[type="radio"]:checked ~ div.radio::after {
+  opacity:1;
+}
+input[type="radio"] ~ div.radio {
+  border-radius:1000px;
+}
+input:checked {
+  background-color:$primary-30;
+  color:$white;
+}
+input[type="checkbox"]:disabled ~ div.checkbox,
+input[type="radio"]:disabled ~ div.radio {
+  background-color:$gray-10;
+  border:2px solid $gray-20;
+}
+
+//input toggle
+input[type="checkbox"] ~ div.toggle {
+  display:inline-block;
+  background-color:$gray-30;
+  border-radius:30px;
+  height:16px;
+  width:34px;
+  margin:2px 12px 0 0;
+  -webkit-transition:.3s;
+  transition:.3s;
+  div {
+    background-color:$white;
+    border:2px solid $gray-50;
+    border-radius:30px;
+    padding:0;
+    height:18px;
+    width:18px;
+    top:-3.5px;
+    position:relative;
+    -webkit-transition:.2s;
+    transition:.2s;
+  }
+}
+input[type="checkbox"]:checked ~ div.toggle {
+  background-color:$primary-30;
+  div {
+    border:2px solid $primary-30;
+    -webkit-transform: translateX(12px);
+    -ms-transform: translateX(12px);
+    transform: translateX(12px);
+  }
+}
+
+//search input styles
+input.search {
+  background-color:$gray-20;
+  border:1px solid $gray-20;
+  border-radius:30px;
+  font-size:14px;
+  margin:0;
+  padding:10px 60px 10px 37px !important;
+  left:-20px;
+  width:222px;
+  @extend .hover;
+}
+input.search:hover {
+  background-color:$white;
+  border:1px solid $gray-40;
+}
+input.search:focus {
+  background-color:transparent;
+  border:1px solid $gray-40;
+}
+input.search:disabled {
+  background-color:$gray-10;
+}
+input.search:disabled:hover {
+  border:1px solid $gray-20;
+}
+input.search:disabled ~ div.search-clear,
+input.search:disabled ~ div.search-go {
+  opacity:0;
+}
+div.search-icon {
+  background-image:url("./icons/search.svg");
+  display:inline-block;
+  height:15px;
+  width:15px;
+  position:absolute;
+  left:10px;
+  top:10px;
+  // left:12px;
+  // top:2px;
+  z-index:1;
+}
+div.search-clear {
+  background-image:url("./icons/search-clear.svg");
+  cursor:pointer;
+  display:inline-block;
+  height:18px;
+  width:18px;
+  position:absolute;
+  right:39px;
+  top:10px;
+}
+div.search-go {
+  background-image:url("./icons/search-go.svg");
+  border-radius:30px;
+  cursor:pointer;
+  display:inline-block;
+  height:24px;
+  width:24px;
+  position:absolute;
+  right:10px;
+  top:7px;
+  @extend .hover;
+}
+
+//quantity input
+div.input.quantity {
+  width:115px;
+
+  label {
+    text-align:center;
+  }
+
+  input[type="number"] {
+    display:inline-block;
+    position:relative;
+    top:-1px;
+    padding:6px 5px;
+    text-indent:10px;
+    width:30px;
+  }
+  input[type="number"].placeholder {
+    color:$gray-30; //adds class placeholder in JS to change color when value is 0
+  }
+  button {
+    display:inline-block;
+  }
+}
+
+
+

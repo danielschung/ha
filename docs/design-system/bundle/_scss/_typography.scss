@@ -1,0 +1,134 @@
+@import 'colors';
+
+//establish fonts
+@font-face {
+  font-family:'SF Pro Regular';
+  src:url(./fonts/SF-Pro-Text-Regular.otf);
+}
+
+@font-face {
+  font-family:'SF Pro Medium';
+  src:url(./fonts/SF-Pro-Text-Medium.otf);
+}
+
+@font-face {
+  font-family:'SF Pro Semibold';
+  src:url(./fonts/SF-Pro-Text-Semibold.otf);
+}
+@font-face {
+  font-family:'SF Pro Bold';
+  src:url(./fonts/SF-Pro-Text-Bold.otf);
+}
+
+$regular:'SF Pro Regular', 'Helvetica', sans-serif;
+$medium:'SF Pro Medium', 'Helvetica', sans-serif;
+$semibold:'SF Pro Semibold', 'Helvetica', sans-serif;
+$bold:'SF Pro Bold', 'Helvetica', sans-serif;
+
+
+// typography styles
+h1.title {
+  font-family:$bold;
+  font-size:46px;
+  line-height:64px;
+  letter-spacing:-0.02em;
+  margin:0;
+}
+h1 {
+  font-family:$semibold;
+  font-size:40px;
+  line-height:48px;
+  letter-spacing:-0.03em;
+  margin:0;
+}
+h2 {
+  font-family:$semibold;
+  font-size:34px;
+  line-height:40px;
+  letter-spacing:-0.03em;
+  margin:0;
+}
+h3 {
+  font-family:$semibold;
+  font-size:24px;
+  line-height:32px;
+  letter-spacing:-0.03em;
+  margin:0;
+}
+h4 {
+  font-family:$semibold;
+  font-size:19px;
+  line-height:28px;
+  letter-spacing:-0.03em;
+  margin:0;
+}
+h5 {
+  font-family:$bold;
+  font-size:13px;
+  line-height:24px;
+  letter-spacing:0.01em;
+  text-transform:uppercase;
+  margin:0;
+}
+p.large {
+  font-family:$regular;
+  font-size:19px;
+  line-height:160%;
+  letter-spacing:-0.02em;
+}
+p {
+  font-family:$regular;
+  font-size:16px;
+  line-height:24px;
+  letter-spacing:-0.01em;
+  margin:0;
+}
+p.caption {
+  color:$gray-70;
+  font-family:$regular;
+  font-size:14px;
+  line-height:24px;
+  letter-spacing:-0.01em;
+}
+a {
+  font-family:$regular;
+  color:$primary-30;
+}
+div {
+  font-family:$regular;
+  letter-spacing:-0.01em;
+}
+
+// list styles
+ul.breadcrumbs {
+  padding:0;
+  font-family:$regular;
+  font-size:16px;
+  line-height:19px;
+  list-style-type:none;
+  color:$primary-30;
+  a {
+    color:$primary-30;
+    text-decoration:none;
+    @extend .hover;
+  }
+  a:hover {
+    text-decoration:underline;
+  }
+  li {
+    display:inline-block;
+  }
+  li::after {
+    content:url("./icons/arrow-right.svg");
+    padding-left:8px;
+    padding-right:4px;
+    position:relative;
+    top:1px;
+  }
+  li.current {
+    color:$gray-50;
+  }
+  li.current::after {
+    content:"";
+  }
+}
